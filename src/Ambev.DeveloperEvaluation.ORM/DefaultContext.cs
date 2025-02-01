@@ -1,11 +1,8 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Entities;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Reflection;
-using System.Xml.Linq;
 
 namespace Ambev.DeveloperEvaluation.ORM;
 
@@ -385,7 +382,7 @@ public class YourDbContextFactory : IDesignTimeDbContextFactory<DefaultContext>
 
         builder.UseNpgsql(
                connectionString,
-               b => b.MigrationsAssembly("Ambev.DeveloperEvaluation.WebApi")
+               b => b.MigrationsAssembly("Ambev.DeveloperEvaluation.SalesApi")
         );
 
         return new DefaultContext(builder.Options);
