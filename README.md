@@ -6,7 +6,7 @@
 1) Altere a string de conexão no arquivo appsettings.json no projeto Ambev.DeveloperEvaluation.SalesApi
 1) Abra o Package Manager Console 
 2) Selecione o projeto Ambev.DeveloperEvaluation.SalesApi
-3) Execute o comando Update-Database > Este comando vai criar e popular as tabelas: Customers, Products, Sales, SalesBranchs
+3) Execute o comando Update-Database > Este comando vai criar e popular as tabelas: Users, Customers, Products, Sales, SalesBranchs, Sasles, SalesItems
 
 
 

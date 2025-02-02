@@ -61,9 +61,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("fc280d83-cc0a-4930-9f7e-8f50a461dded"),
+                            Id = new Guid("1f48eeee-4d8b-4312-acf4-56f1243e3c44"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9969),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4138),
                             Email = "ameckiff1@icio.us",
                             Name = "Archie Meckiff",
                             Phone = "1251145281",
@@ -71,9 +71,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6fdc64ab-aa6e-4c9f-ae42-2b11905bdab1"),
+                            Id = new Guid("51569342-73cf-4f59-9d8d-c62b5c3c69c7"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9973),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4141),
                             Email = "bpetracek2@dagondesign.com",
                             Name = "Bethina Petracek",
                             Phone = "2784864410",
@@ -81,9 +81,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("e2f5f0d4-1cd6-4992-906f-edb85fa9d58f"),
+                            Id = new Guid("a4cdda75-0ecf-47bd-90c0-fa590b496dcc"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9976),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4144),
                             Email = "esimmons3@webeden.co.uk",
                             Name = "Eloise Simmons",
                             Phone = "5673473269",
@@ -91,9 +91,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f069db82-8aba-4ebb-bc46-634229dc5dd4"),
+                            Id = new Guid("e0275f14-afb5-4401-8194-67a7b19e020e"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9979),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4147),
                             Email = "ppillman4@parallels.com",
                             Name = "Phyllys Pillman",
                             Phone = "4453959379",
@@ -101,9 +101,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8eb3cd08-68d7-45b5-8fb8-822ccfeb8544"),
+                            Id = new Guid("d3e0999e-b488-471d-ab77-6f5844ccf500"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9982),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4152),
                             Email = "hodeoran5@about.com",
                             Name = "Hildagarde O'Deoran",
                             Phone = "4707864856",
@@ -111,9 +111,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c9c2c9ec-1568-4ee7-986a-e127108ae4c4"),
+                            Id = new Guid("77a7541c-7382-49c9-9ab6-371c01c26746"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9985),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4155),
                             Email = "baulsford6@goo.gl",
                             Name = "Binnie Aulsford",
                             Phone = "9814345966",
@@ -121,9 +121,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d6b42cb4-f752-4697-899e-9a99f3311493"),
+                            Id = new Guid("78347967-d1cb-47ec-a994-588205f39c23"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9987),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4157),
                             Email = "lcranney7@walmart.com",
                             Name = "Leonid Cranney",
                             Phone = "7247173033",
@@ -131,9 +131,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2048e240-dfc8-48a6-b980-4f3c5b86206a"),
+                            Id = new Guid("5ad186b5-3af2-4a11-89d4-9d13458265b0"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9994),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4160),
                             Email = "rmcclary8@nbcnews.com",
                             Name = "Robinett McClary",
                             Phone = "6461435318",
@@ -141,9 +141,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6053ffd7-1b6a-4cc2-bcef-95237d577702"),
+                            Id = new Guid("b67494b8-7e5a-42b2-b6fc-836e9bb11827"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9997),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4162),
                             Email = "blujan9@exblog.jp",
                             Name = "Barbra Lujan",
                             Phone = "3958797276",
@@ -157,9 +157,6 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasDefaultValueSql("gen_random_uuid()");
-
-                    b.Property<bool>("Active")
-                        .HasColumnType("boolean");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -181,6 +178,9 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("double precision");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Stock")
                         .HasColumnType("integer");
 
@@ -191,156 +191,156 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cf3ebffc-98ec-4a87-9d1c-012a78c61ea7"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9623),
+                            Id = new Guid("593543e8-9f03-4123-973e-1cff38dd9ed6"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4026),
                             Description = "Guaraná Antarctica Zero 350ml Lata",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica Zero",
                             Price = 3.3900000000000001,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("7a5e0ea7-431b-416c-b5c3-b4777201337f"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9629),
+                            Id = new Guid("06d7a669-6bb8-48b6-9abb-f32fb9c54722"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4030),
                             Description = "Pepsi Black 350ml Lata",
                             Image = "image.jpg",
                             Name = "Pepsi Black 350ml",
                             Price = 2.6899999999999999,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("ad735563-1f77-4b2f-bb29-c0eeca159d64"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9632),
+                            Id = new Guid("8cd5b2e4-09e8-4b86-ac8e-6535c194f947"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4052),
                             Description = "Guaraná Antarctica Zero 2L",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica Zero",
                             Price = 9.4900000000000002,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("9f23d251-7e56-477a-9abc-1b936469d529"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9635),
+                            Id = new Guid("0a551424-303d-4583-bf3b-6f933315184d"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4055),
                             Description = "Guaraná Antarctica 2L",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica",
                             Price = 9.4900000000000002,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("079eefe5-3d75-4c57-b502-b378ec1f9056"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9639),
+                            Id = new Guid("ef54ad49-fc73-4d98-b43c-76627aaf367f"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4057),
                             Description = "Guaraná Antarctica 350ml Lata",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica 350ml",
                             Price = 3.3900000000000001,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("173aa8a2-e96c-40bd-96bc-31e70302f4ab"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9656),
+                            Id = new Guid("de171cb3-d814-467c-9fd0-c3ad5a266e40"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4060),
                             Description = "Sukita 2L",
                             Image = "image.jpg",
                             Name = "Sukita 2L",
                             Price = 6.29,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("3f4cf060-8e84-4be7-b1c8-9fdb1c5d9ca1"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9659),
+                            Id = new Guid("1b8ca000-fedd-40ba-82c3-64b84026c7a9"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4063),
                             Description = "Soda Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Soda Antarctica 350ml",
                             Price = 2.9900000000000002,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("945b98d5-a5b2-4079-8d28-52043908bd2a"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9662),
+                            Id = new Guid("30b4765b-b54d-4f54-8390-e68352f2d469"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4065),
                             Description = "Pepsi Twist 350ml",
                             Image = "image.jpg",
                             Name = "Pepsi Twist 350ml",
                             Price = 2.9900000000000002,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("8d569be4-b1c0-454b-8b6f-7ef38fe4e42e"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9665),
+                            Id = new Guid("d9f83b1b-0305-4088-bafb-2c09fca64727"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4068),
                             Description = "Soda Antarctica Zero 2L",
                             Image = "image.jpg",
                             Name = "Soda Antarctica Zero 2L",
                             Price = 8.1899999999999995,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("650bbb5a-0171-4545-aef6-a59afff8a01a"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9669),
+                            Id = new Guid("4bce8fc8-b34b-4ac1-bffa-3c6411d14520"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4070),
                             Description = "Tônica Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica 350ml",
                             Price = 3.5899999999999999,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("86ab33a0-2c86-4129-841c-f7c80a76a2ac"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9672),
+                            Id = new Guid("6779577d-73f8-417a-b253-bda918f22c82"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4076),
                             Description = "Tônica Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica 350ml",
                             Price = 3.5899999999999999,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("981f841b-c163-4c95-aada-e42a531cbcb8"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9675),
+                            Id = new Guid("eb6dbc13-4ef8-4125-941a-8bea30945bcc"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4079),
                             Description = "Tônica Antarctica Gengibre 269ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica Gengibre 269ml",
                             Price = 2.6899999999999999,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("75f2d66b-c1ec-4164-b103-e4ced535553d"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9679),
+                            Id = new Guid("d17d70e1-04e7-4f7a-8200-a36896df9831"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4081),
                             Description = "Sukita Uva 350ml",
                             Image = "image.jpg",
                             Name = "Sukita Uva 350ml",
                             Price = 2.9900000000000002,
+                            Status = 1,
                             Stock = 100
                         },
                         new
                         {
-                            Id = new Guid("bec171bd-095c-41b6-954c-a63b8646014f"),
-                            Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 654, DateTimeKind.Utc).AddTicks(9685),
+                            Id = new Guid("bee9eadb-49a8-48dc-a8f6-6b830ed67ecb"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4085),
                             Description = "Sukita 1L",
                             Image = "image.jpg",
                             Name = "Sukita 1L",
                             Price = 4.8899999999999997,
+                            Status = 1,
                             Stock = 100
                         });
                 });
@@ -450,81 +450,81 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4d6bc996-0e1e-4453-bb20-b64dea657014"),
+                            Id = new Guid("638c20ab-51d1-4d7f-a8bc-08a4cd866296"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(42),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4201),
                             Name = "Camaçari",
                             State = "BA"
                         },
                         new
                         {
-                            Id = new Guid("82aebc50-2317-4607-847a-ca4541501241"),
+                            Id = new Guid("e9ede15a-9fee-45b2-b93e-0451a4a1f31e"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(46),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4205),
                             Name = "Caruaru",
                             State = "PE"
                         },
                         new
                         {
-                            Id = new Guid("d10109e8-46c5-4442-8117-68f49642afc5"),
+                            Id = new Guid("2b253be0-e8c9-4da8-af6a-b5b3ed1506ae"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(49),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4207),
                             Name = "Contagem",
                             State = "MG"
                         },
                         new
                         {
-                            Id = new Guid("da300b36-ad3c-490f-a005-76ac5579c2ec"),
+                            Id = new Guid("81a5c076-10a3-495f-92f4-ef672d3b0a48"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(51),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4212),
                             Name = "Curitiba",
                             State = "PR"
                         },
                         new
                         {
-                            Id = new Guid("33b30ae1-b803-4549-b49e-fa46614e1d08"),
+                            Id = new Guid("b0857121-06c2-4ccf-9904-2a228d8283e0"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(54),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4214),
                             Name = "Guarulhos",
                             State = "SP"
                         },
                         new
                         {
-                            Id = new Guid("df9968fc-9e45-4605-a830-ef1ffdc8d298"),
+                            Id = new Guid("4d159590-04a7-4513-8afd-8cddfaed25cc"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(56),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4217),
                             Name = "Itajáí",
                             State = "SC"
                         },
                         new
                         {
-                            Id = new Guid("65bb57c1-69c8-43e1-bc84-73bffbb0cf99"),
+                            Id = new Guid("0e8802bd-d427-4c5c-9ccd-af0b40594eb7"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(62),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4219),
                             Name = "Itapissuma",
                             State = "PE"
                         },
                         new
                         {
-                            Id = new Guid("40ae8903-0729-4a20-bb02-ac085b2e28f4"),
+                            Id = new Guid("884eea63-1c31-42d7-b35d-31941a94eeec"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(64),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4273),
                             Name = "Jacareí",
                             State = "SP"
                         },
                         new
                         {
-                            Id = new Guid("21705693-69c8-4ca9-b9dc-e567665dcc2e"),
+                            Id = new Guid("eff40c31-3f16-446f-aadd-d152dc2c24b9"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(66),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4276),
                             Name = "Jaguariúna",
                             State = "SP"
                         },
                         new
                         {
-                            Id = new Guid("b978cc4f-3094-482e-8d00-33d93a7be7c8"),
+                            Id = new Guid("a5f3b56d-3ca1-487c-baf3-f48885f46527"),
                             Active = true,
-                            CreatedAt = new DateTime(2025, 2, 1, 6, 6, 38, 655, DateTimeKind.Utc).AddTicks(69),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4278),
                             Name = "Jundiaí",
                             State = "SP"
                         });
@@ -576,6 +576,52 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("89823805-b8ed-4d08-b457-625513edf33e"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3752),
+                            Email = "jeferson.almeida@ambev.com",
+                            Password = "Teste@123",
+                            Phone = "11997541210",
+                            Role = "Admin",
+                            Status = "Active",
+                            Username = "jeferson.almeida"
+                        },
+                        new
+                        {
+                            Id = new Guid("40d639e8-6493-44d1-b6a0-223e718798da"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3756),
+                            Email = "cdepinna0@ucsd.edu",
+                            Password = "ypgeD344.s",
+                            Phone = "9023970118",
+                            Role = "Admin",
+                            Status = "Active",
+                            Username = "nsloane0"
+                        },
+                        new
+                        {
+                            Id = new Guid("254a0880-51b5-42d3-949f-878575a0aa7f"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3760),
+                            Email = "kdurn1@51.la",
+                            Password = "guetH908~",
+                            Phone = "2129615239",
+                            Role = "Manager",
+                            Status = "Active",
+                            Username = "harkin1"
+                        },
+                        new
+                        {
+                            Id = new Guid("62087d5d-55d7-43f5-9e64-228e188d6f7a"),
+                            CreatedAt = new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3763),
+                            Email = "freicharz2@irs.gov",
+                            Password = "vxpeC202\"+",
+                            Phone = "6155049411",
+                            Role = "Customer",
+                            Status = "Active",
+                            Username = "bquare2"
+                        });
                 });
 
             modelBuilder.Entity("Ambev.DeveloperEvaluation.Domain.Entities.Sale", b =>
