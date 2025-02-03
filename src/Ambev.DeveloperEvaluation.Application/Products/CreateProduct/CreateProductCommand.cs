@@ -15,9 +15,7 @@ public class CreateProductCommand : IRequest<CreateProductResult>
     public int Stock { get; set; }
     public DateTime CreatedAt { get; set; }
     public ProductStatus Status { get; set; }
-    // public SaleItem SaleItem { get; private set; }
-
-
+    
     public ValidationResultDetail Validate()
     {
         var validator = new CreateProductCommandValidator();
