@@ -1,12 +1,9 @@
 ﻿using Ambev.DeveloperEvaluation.Application.Products.DeleteProduct;
 using Ambev.DeveloperEvaluation.Application.Products.GetProduct;
-using Ambev.DeveloperEvaluation.Application.Products.ListProduct;
-using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.SalesApi.Common;
 using Ambev.DeveloperEvaluation.SalesApi.Features.Products.CreateProduct;
 using Ambev.DeveloperEvaluation.SalesApi.Features.Products.DeleteProduct;
 using Ambev.DeveloperEvaluation.SalesApi.Features.Products.GetProduct;
-using Ambev.DeveloperEvaluation.SalesApi.Features.Products.ListProduct;
 using Ambev.DeveloperEvaluation.WebApi.Features.Products.DeleteProduct;
 using Ambev.SalesApi.Application.Products.CreateProduct;
 using AutoMapper;
@@ -28,27 +25,25 @@ public class ProductsController : BaseController
         _mapper = mapper;
     }
 
-    [HttpGet]
-    [ProducesResponseType(typeof(ApiResponseWithData<ListProductResponse>), StatusCodes.Status200OK)]
+    [HttpPost]
+    [ProducesResponseType(typeof(ApiResponseWithData<CreateProductResponse>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequest request, CancellationToken cancellationToken)
     {
-        var request = new ListProductRequest();
-        var validator = new ListProductRequestValidator();
+        var validator = new CreateProductRequestValidator();
         var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
         if (!validationResult.IsValid)
             return BadRequest(validationResult.Errors);
 
-        var command = _mapper.Map<ListProductCommand>(request);
+        var command = _mapper.Map<CreateProductCommand>(request);
         var response = await _mediator.Send(command, cancellationToken);
 
-        return Ok(new ApiResponseWithData<ListProductResponse>
+        return Created(string.Empty, new ApiResponseWithData<CreateProductResponse>
         {
             Success = true,
-            Message = "Products retrieved successfully",
-            Data = _mapper.Map<ListProductResponse>(response)
+            Message = "Product created successfully",
+            Data = _mapper.Map<CreateProductResponse>(response)
         });
     }
 
@@ -73,28 +68,6 @@ public class ProductsController : BaseController
             Success = true,
             Message = "Product retrieved successfully",
             Data = _mapper.Map<GetProductResponse>(response)
-        });
-    }
-
-    [HttpPost]
-    [ProducesResponseType(typeof(ApiResponseWithData<CreateProductResponse>), StatusCodes.Status201Created)]
-    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequest request, CancellationToken cancellationToken)
-    {
-        var validator = new CreateProductRequestValidator();
-        var validationResult = await validator.ValidateAsync(request, cancellationToken);
-
-        if (!validationResult.IsValid)
-            return BadRequest(validationResult.Errors);
-
-        var command = _mapper.Map<CreateProductCommand>(request);
-        var response = await _mediator.Send(command, cancellationToken);
-
-        return Created(string.Empty, new ApiResponseWithData<CreateProductResponse>
-        {
-            Success = true,
-            Message = "Product created successfully",
-            Data = _mapper.Map<CreateProductResponse>(response)
         });
     }
 
