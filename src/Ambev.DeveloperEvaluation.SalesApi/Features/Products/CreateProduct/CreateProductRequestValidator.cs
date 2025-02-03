@@ -6,9 +6,9 @@ public class CreateProductRequestValidator : AbstractValidator<CreateProductRequ
 {
     public CreateProductRequestValidator()
     {
-        RuleFor(user => user.Name).NotEmpty().Length(3, 50);
-        RuleFor(user => user.Description).NotEmpty().Length(3, 50);
-        RuleFor(user => user.Image).NotEmpty().Length(3, 50);
+        RuleFor(product => product.Name).NotEmpty().Length(3, 50);
+        RuleFor(product => product.Description).NotEmpty().Length(3, 50);
+        RuleFor(product => product.Image).NotEmpty().Length(3, 50);
 
     }
 }
