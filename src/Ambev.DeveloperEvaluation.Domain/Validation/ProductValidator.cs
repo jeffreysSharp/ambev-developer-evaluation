@@ -20,7 +20,7 @@ public class ProductValidator : AbstractValidator<Product>
                 .MaximumLength(100).WithMessage("Name cannot be longer than 100 characters.");
 
      RuleFor(product => product.Status)
-            .NotEqual(ProductStatus.Unknown)
+            .NotEqual(Status.Unknown)
             .WithMessage("Product status cannot be Unknown.");
 
     }

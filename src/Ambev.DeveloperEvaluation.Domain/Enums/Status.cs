@@ -1,6 +1,6 @@
 namespace Ambev.DeveloperEvaluation.Domain.Enums;
 
-public enum ProductStatus
+public enum Status
 {
     Unknown = 0,
     Active,

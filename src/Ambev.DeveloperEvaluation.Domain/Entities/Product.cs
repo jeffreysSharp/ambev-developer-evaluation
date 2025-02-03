@@ -12,7 +12,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public string Image { get; set; } = string.Empty;
         public int Stock { get; set; }
         public DateTime CreatedAt { get; set; }
-        public ProductStatus Status { get; set; }
+        public Status Status { get; set; }
         public SaleItem SaleItem { get; private set; }
         string IProduct.Id => Id.ToString();
         string IProduct.Name => Name;

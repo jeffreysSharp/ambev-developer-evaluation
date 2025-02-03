@@ -48,7 +48,7 @@ public class User : BaseEntity, IUser
     /// Gets the user's current status.
     /// Indicates whether the user is active, inactive, or blocked in the system.
     /// </summary>
-    public UserStatus Status { get; set; }
+    public Status Status { get; set; }
 
     /// <summary>
     /// Gets the date and time when the user was created.
@@ -120,7 +120,7 @@ public class User : BaseEntity, IUser
     /// </summary>
     public void Activate()
     {
-        Status = UserStatus.Active;
+        Status = Status.Active;
         UpdatedAt = DateTime.UtcNow;
     }
 
@@ -130,7 +130,7 @@ public class User : BaseEntity, IUser
     /// </summary>
     public void Deactivate()
     {
-        Status = UserStatus.Inactive;
+        Status = Status.Inactive;
         UpdatedAt = DateTime.UtcNow;
     }
 
@@ -140,7 +140,7 @@ public class User : BaseEntity, IUser
     /// </summary>
     public void Suspend()
     {
-        Status = UserStatus.Suspended;
+        Status = Status.Suspended;
         UpdatedAt = DateTime.UtcNow;
     }
 }

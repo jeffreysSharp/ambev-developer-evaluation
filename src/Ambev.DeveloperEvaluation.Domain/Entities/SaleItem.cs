@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Common;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 using System.Diagnostics;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
@@ -10,7 +11,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public string ProductName { get; private set; }
         public int Quantity { get; private set; }
         public decimal Price { get; private set; }
-        public string ProductImage { get; set; }
+        public Status Status { get; set; }
 
         // EF Rel.
         public Sale Sale { get; set; }
@@ -23,7 +24,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
             ProductName = productName;
             Quantity = quantity;
             Price = price;
-            ProductImage = productImage;
         }
 
         // EF ctor

@@ -23,7 +23,7 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     Phone = table.Column<string>(type: "text", nullable: false),
                     SocialNumber = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Active = table.Column<bool>(type: "boolean", nullable: false)
+                    Status = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -56,7 +56,7 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     Name = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
                     State = table.Column<string>(type: "character varying(2)", maxLength: 2, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Active = table.Column<bool>(type: "boolean", nullable: false)
+                    Status = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -90,8 +90,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     SaleNumber = table.Column<int>(type: "integer", nullable: false),
                     TotalSaleAmount = table.Column<decimal>(type: "numeric", nullable: false),
                     Discount = table.Column<decimal>(type: "numeric", nullable: false),
-                    DateSaleMade = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Cancelled = table.Column<bool>(type: "boolean", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Status = table.Column<int>(type: "integer", nullable: false),
                     CustomerId = table.Column<Guid>(type: "uuid", nullable: false),
                     SalesBrancheId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
@@ -122,7 +122,7 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     ProductName = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Quantity = table.Column<int>(type: "integer", nullable: false),
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
-                    ProductImage = table.Column<string>(type: "text", nullable: false)
+                    Status = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -143,18 +143,18 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
 
             migrationBuilder.InsertData(
                 table: "Customers",
-                columns: new[] { "Id", "Active", "CreatedAt", "Email", "Name", "Phone", "SocialNumber" },
+                columns: new[] { "Id", "CreatedAt", "Email", "Name", "Phone", "SocialNumber", "Status" },
                 values: new object[,]
                 {
-                    { new Guid("1f48eeee-4d8b-4312-acf4-56f1243e3c44"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4138), "ameckiff1@icio.us", "Archie Meckiff", "1251145281", "117-25-1588" },
-                    { new Guid("51569342-73cf-4f59-9d8d-c62b5c3c69c7"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4141), "bpetracek2@dagondesign.com", "Bethina Petracek", "2784864410", "807-31-1052" },
-                    { new Guid("5ad186b5-3af2-4a11-89d4-9d13458265b0"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4160), "rmcclary8@nbcnews.com", "Robinett McClary", "6461435318", "884-29-8560" },
-                    { new Guid("77a7541c-7382-49c9-9ab6-371c01c26746"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4155), "baulsford6@goo.gl", "Binnie Aulsford", "9814345966", "552-29-4372" },
-                    { new Guid("78347967-d1cb-47ec-a994-588205f39c23"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4157), "lcranney7@walmart.com", "Leonid Cranney", "7247173033", "523-53-3047" },
-                    { new Guid("a4cdda75-0ecf-47bd-90c0-fa590b496dcc"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4144), "esimmons3@webeden.co.uk", "Eloise Simmons", "5673473269", "687-16-2264" },
-                    { new Guid("b67494b8-7e5a-42b2-b6fc-836e9bb11827"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4162), "blujan9@exblog.jp", "Barbra Lujan", "3958797276", "314-65-1589" },
-                    { new Guid("d3e0999e-b488-471d-ab77-6f5844ccf500"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4152), "hodeoran5@about.com", "Hildagarde O'Deoran", "4707864856", "457-86-4530" },
-                    { new Guid("e0275f14-afb5-4401-8194-67a7b19e020e"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4147), "ppillman4@parallels.com", "Phyllys Pillman", "4453959379", "512-17-6944" }
+                    { new Guid("0e72e824-615c-461e-9249-f0cc06257278"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(865), "rmcclary8@nbcnews.com", "Robinett McClary", "6461435318", "884-29-8560", 1 },
+                    { new Guid("6cd7f643-e0d9-469b-b0a4-1a7a9c97c8c5"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(851), "ppillman4@parallels.com", "Phyllys Pillman", "4453959379", "512-17-6944", 1 },
+                    { new Guid("851507b8-c4a4-4eed-bde7-ff29b74d7f1d"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(858), "baulsford6@goo.gl", "Binnie Aulsford", "9814345966", "552-29-4372", 1 },
+                    { new Guid("9435d6a7-07f8-4a12-86e3-9caf9a1f8c30"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(847), "esimmons3@webeden.co.uk", "Eloise Simmons", "5673473269", "687-16-2264", 1 },
+                    { new Guid("a0b0b471-6afc-4c12-ba5a-f3c04f3eeab5"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(854), "hodeoran5@about.com", "Hildagarde O'Deoran", "4707864856", "457-86-4530", 1 },
+                    { new Guid("b059c38c-497c-4031-a378-486c9fb9ae43"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(861), "lcranney7@walmart.com", "Leonid Cranney", "7247173033", "523-53-3047", 1 },
+                    { new Guid("d68102c9-1ff1-4a15-9592-bf7281d693bc"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(834), "ameckiff1@icio.us", "Archie Meckiff", "1251145281", "117-25-1588", 1 },
+                    { new Guid("d84302b2-38a5-4890-a097-3f682e22b0f2"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(843), "bpetracek2@dagondesign.com", "Bethina Petracek", "2784864410", "807-31-1052", 1 },
+                    { new Guid("f0bd57bd-df9f-4ffd-9f13-a5f8ba97a20b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(868), "blujan9@exblog.jp", "Barbra Lujan", "3958797276", "314-65-1589", 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -162,37 +162,37 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Description", "Image", "Name", "Price", "Status", "Stock" },
                 values: new object[,]
                 {
-                    { new Guid("06d7a669-6bb8-48b6-9abb-f32fb9c54722"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4030), "Pepsi Black 350ml Lata", "image.jpg", "Pepsi Black 350ml", 2.6899999999999999, 1, 100 },
-                    { new Guid("0a551424-303d-4583-bf3b-6f933315184d"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4055), "Guaraná Antarctica 2L", "image.jpg", "Guaraná Antarctica", 9.4900000000000002, 1, 100 },
-                    { new Guid("1b8ca000-fedd-40ba-82c3-64b84026c7a9"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4063), "Soda Antarctica 350ml", "image.jpg", "Soda Antarctica 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("30b4765b-b54d-4f54-8390-e68352f2d469"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4065), "Pepsi Twist 350ml", "image.jpg", "Pepsi Twist 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("4bce8fc8-b34b-4ac1-bffa-3c6411d14520"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4070), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
-                    { new Guid("593543e8-9f03-4123-973e-1cff38dd9ed6"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4026), "Guaraná Antarctica Zero 350ml Lata", "image.jpg", "Guaraná Antarctica Zero", 3.3900000000000001, 1, 100 },
-                    { new Guid("6779577d-73f8-417a-b253-bda918f22c82"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4076), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
-                    { new Guid("8cd5b2e4-09e8-4b86-ac8e-6535c194f947"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4052), "Guaraná Antarctica Zero 2L", "image.jpg", "Guaraná Antarctica Zero", 9.4900000000000002, 1, 100 },
-                    { new Guid("bee9eadb-49a8-48dc-a8f6-6b830ed67ecb"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4085), "Sukita 1L", "image.jpg", "Sukita 1L", 4.8899999999999997, 1, 100 },
-                    { new Guid("d17d70e1-04e7-4f7a-8200-a36896df9831"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4081), "Sukita Uva 350ml", "image.jpg", "Sukita Uva 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("d9f83b1b-0305-4088-bafb-2c09fca64727"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4068), "Soda Antarctica Zero 2L", "image.jpg", "Soda Antarctica Zero 2L", 8.1899999999999995, 1, 100 },
-                    { new Guid("de171cb3-d814-467c-9fd0-c3ad5a266e40"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4060), "Sukita 2L", "image.jpg", "Sukita 2L", 6.29, 1, 100 },
-                    { new Guid("eb6dbc13-4ef8-4125-941a-8bea30945bcc"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4079), "Tônica Antarctica Gengibre 269ml", "image.jpg", "Tônica Antarctica Gengibre 269ml", 2.6899999999999999, 1, 100 },
-                    { new Guid("ef54ad49-fc73-4d98-b43c-76627aaf367f"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4057), "Guaraná Antarctica 350ml Lata", "image.jpg", "Guaraná Antarctica 350ml", 3.3900000000000001, 1, 100 }
+                    { new Guid("0218022f-b28a-4186-b38a-adb79b4b03a0"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(738), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
+                    { new Guid("043fda51-5f45-4ef7-9fac-1dda0c20a9f3"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(702), "Guaraná Antarctica Zero 2L", "image.jpg", "Guaraná Antarctica Zero", 9.4900000000000002, 1, 100 },
+                    { new Guid("0c69bcd8-a0f4-40af-b986-e2ec383b46f9"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(734), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
+                    { new Guid("1cdbb9e1-30d7-4c64-8361-b2a6b2ed7d0c"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(706), "Guaraná Antarctica 2L", "image.jpg", "Guaraná Antarctica", 9.4900000000000002, 1, 100 },
+                    { new Guid("1e11394a-241a-46b9-8b63-1eca0c97252a"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(745), "Sukita Uva 350ml", "image.jpg", "Sukita Uva 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("4a81f541-ee75-4434-802c-3e0fea9934e2"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(731), "Soda Antarctica Zero 2L", "image.jpg", "Soda Antarctica Zero 2L", 8.1899999999999995, 1, 100 },
+                    { new Guid("73ba83aa-5457-413a-814e-b80d0015eca7"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(713), "Sukita 2L", "image.jpg", "Sukita 2L", 6.29, 1, 100 },
+                    { new Guid("81332a02-f937-4e13-91ea-9a68fb5d5349"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(710), "Guaraná Antarctica 350ml Lata", "image.jpg", "Guaraná Antarctica 350ml", 3.3900000000000001, 1, 100 },
+                    { new Guid("952a9e54-c256-4e73-95a8-17ea241d61e9"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(741), "Tônica Antarctica Gengibre 269ml", "image.jpg", "Tônica Antarctica Gengibre 269ml", 2.6899999999999999, 1, 100 },
+                    { new Guid("d99e5619-acf8-4457-8072-8764d3bf9465"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(727), "Pepsi Twist 350ml", "image.jpg", "Pepsi Twist 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("e16b8014-2d59-4eb0-94b9-63d32b5ce612"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(694), "Guaraná Antarctica Zero 350ml Lata", "image.jpg", "Guaraná Antarctica Zero", 3.3900000000000001, 1, 100 },
+                    { new Guid("ea422f67-faf9-471c-9697-e787a9f10e12"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(717), "Soda Antarctica 350ml", "image.jpg", "Soda Antarctica 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("f66f4753-699b-421a-bf3f-8d46a9ac6477"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(749), "Sukita 1L", "image.jpg", "Sukita 1L", 4.8899999999999997, 1, 100 },
+                    { new Guid("ff779b48-d32d-4594-846e-bb73774a2179"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(698), "Pepsi Black 350ml Lata", "image.jpg", "Pepsi Black 350ml", 2.6899999999999999, 1, 100 }
                 });
 
             migrationBuilder.InsertData(
                 table: "SalesBranches",
-                columns: new[] { "Id", "Active", "CreatedAt", "Name", "State" },
+                columns: new[] { "Id", "CreatedAt", "Name", "State", "Status" },
                 values: new object[,]
                 {
-                    { new Guid("0e8802bd-d427-4c5c-9ccd-af0b40594eb7"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4219), "Itapissuma", "PE" },
-                    { new Guid("2b253be0-e8c9-4da8-af6a-b5b3ed1506ae"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4207), "Contagem", "MG" },
-                    { new Guid("4d159590-04a7-4513-8afd-8cddfaed25cc"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4217), "Itajáí", "SC" },
-                    { new Guid("638c20ab-51d1-4d7f-a8bc-08a4cd866296"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4201), "Camaçari", "BA" },
-                    { new Guid("81a5c076-10a3-495f-92f4-ef672d3b0a48"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4212), "Curitiba", "PR" },
-                    { new Guid("884eea63-1c31-42d7-b35d-31941a94eeec"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4273), "Jacareí", "SP" },
-                    { new Guid("a5f3b56d-3ca1-487c-baf3-f48885f46527"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4278), "Jundiaí", "SP" },
-                    { new Guid("b0857121-06c2-4ccf-9904-2a228d8283e0"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4214), "Guarulhos", "SP" },
-                    { new Guid("e9ede15a-9fee-45b2-b93e-0451a4a1f31e"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4205), "Caruaru", "PE" },
-                    { new Guid("eff40c31-3f16-446f-aadd-d152dc2c24b9"), true, new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(4276), "Jaguariúna", "SP" }
+                    { new Guid("0fa8e63e-f881-40ee-82ad-5d2e039fc8e3"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(962), "Jaguariúna", "SP", 1 },
+                    { new Guid("5c9cb422-f7b1-47d5-b115-7bdffe902b14"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(934), "Camaçari", "BA", 1 },
+                    { new Guid("6414124f-2154-4bfc-a7d5-fe8db16d243b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(945), "Curitiba", "PR", 1 },
+                    { new Guid("7fdd65fd-05cf-440a-96b5-750200b2e1ef"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(956), "Jacareí", "SP", 1 },
+                    { new Guid("ad2bb90b-f014-4e03-a932-2b804cdfc26b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(938), "Caruaru", "PE", 1 },
+                    { new Guid("bb4b9e3e-52f4-43d1-9ab0-74f9a676a922"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(950), "Itajáí", "SC", 1 },
+                    { new Guid("e3927d22-d28e-4545-a7a8-03f2f8f613df"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(953), "Itapissuma", "PE", 1 },
+                    { new Guid("f68d81fb-eeaa-49b2-9528-a8c3fd49d196"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(942), "Contagem", "MG", 1 },
+                    { new Guid("f89908fc-e13d-4e46-9c44-35f44ea90537"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(948), "Guarulhos", "SP", 1 },
+                    { new Guid("fd388b70-c6f0-4c34-b4dc-ebb9fb587f74"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(965), "Jundiaí", "SP", 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -200,10 +200,10 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Email", "Password", "Phone", "Role", "Status", "UpdatedAt", "Username" },
                 values: new object[,]
                 {
-                    { new Guid("254a0880-51b5-42d3-949f-878575a0aa7f"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3760), "kdurn1@51.la", "guetH908~", "2129615239", "Manager", "Active", null, "harkin1" },
-                    { new Guid("40d639e8-6493-44d1-b6a0-223e718798da"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3756), "cdepinna0@ucsd.edu", "ypgeD344.s", "9023970118", "Admin", "Active", null, "nsloane0" },
-                    { new Guid("62087d5d-55d7-43f5-9e64-228e188d6f7a"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3763), "freicharz2@irs.gov", "vxpeC202\"+", "6155049411", "Customer", "Active", null, "bquare2" },
-                    { new Guid("89823805-b8ed-4d08-b457-625513edf33e"), new DateTime(2025, 2, 1, 20, 46, 5, 848, DateTimeKind.Utc).AddTicks(3752), "jeferson.almeida@ambev.com", "Teste@123", "11997541210", "Admin", "Active", null, "jeferson.almeida" }
+                    { new Guid("205b14c3-5b78-4df0-a3f4-bc44b821d1a4"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(119), "kdurn1@51.la", "guetH908~", "2129615239", "Manager", "Active", null, "harkin1" },
+                    { new Guid("50213d88-dc36-4670-b351-a435a26e53f6"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(138), "freicharz2@irs.gov", "vxpeC202\"+", "6155049411", "Customer", "Active", null, "bquare2" },
+                    { new Guid("8432d35d-4f79-493c-9ccd-a69a81912d1a"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(109), "jeferson.almeida@ambev.com", "Teste@123", "11997541210", "Admin", "Active", null, "jeferson.almeida" },
+                    { new Guid("c7c02971-074d-4a02-87c0-692df1bf1b5d"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(114), "cdepinna0@ucsd.edu", "ypgeD344.s", "9023970118", "Admin", "Active", null, "nsloane0" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -215,14 +215,12 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Sales_CustomerId",
                 table: "Sales",
-                column: "CustomerId",
-                unique: true);
+                column: "CustomerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Sales_SalesBrancheId",
                 table: "Sales",
-                column: "SalesBrancheId",
-                unique: true);
+                column: "SalesBrancheId");
         }
 
         /// <inheritdoc />
