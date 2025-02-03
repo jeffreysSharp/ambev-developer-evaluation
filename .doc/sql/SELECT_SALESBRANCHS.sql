@@ -1,2 +1,2 @@
-SELECT "Id", "Name", "State", "CreatedAt", "Active"
+SELECT "Id", "Name", "State", "CreatedAt", "Status"
 	FROM public."SalesBranches";

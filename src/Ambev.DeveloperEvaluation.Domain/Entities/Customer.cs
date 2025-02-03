@@ -1,5 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Common;
-using System.Net;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
@@ -10,8 +10,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public string Phone { get; set; }
         public string SocialNumber { get; set; }
         public DateTime CreatedAt { get; set; }
-        public bool Active { get; set; }
-        public Sale Sale { get; set; }
-
+        public Status Status { get; set; }
     }
 }

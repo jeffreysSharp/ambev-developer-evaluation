@@ -43,7 +43,7 @@ public class CreateUserCommand : IRequest<CreateUserResult>
     /// <summary>
     /// Gets or sets the status of the user.
     /// </summary>
-    public UserStatus Status { get; set; }
+    public Status Status { get; set; }
 
     /// <summary>
     /// Gets or sets the role of the user.

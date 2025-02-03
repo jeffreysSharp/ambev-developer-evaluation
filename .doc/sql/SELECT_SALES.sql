@@ -1,3 +1,3 @@
-SELECT "Id", "SaleNumber", "TotalSaleAmount", "Discount", "DateSaleMade", "Cancelled", "CustomerId", "SalesBrancheId"
+SELECT "Id", "SaleNumber", "TotalSaleAmount", "Discount", "CreatedAt", "Status", "CustomerId", "SalesBrancheId"
 	FROM public."Sales";
 	

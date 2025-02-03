@@ -17,19 +17,19 @@ public class SaleConfiguration : IEntityTypeConfiguration<Sale>
         builder.Property(u => u.SalesBrancheId).IsRequired();
         builder.Property(u => u.TotalSaleAmount).IsRequired();
 
-        // 1 : 1 => Sale : Customer
-        builder
-        .HasOne(e => e.Customer)
-        .WithOne(e => e.Sale)
-        .HasForeignKey<Sale>(e => e.CustomerId)
-        .IsRequired();
+        //// 1 : 1 => Sale : Customer
+        //builder
+        //.HasOne(e => e.Customer)
+        //.WithOne(e => e.Sale)
+        //.HasForeignKey<Sale>(e => e.CustomerId)
+        //.IsRequired();
 
-        // 1 : 1 => Sale : SalesBranche
-        builder
-        .HasOne(e => e.SalesBranche)
-        .WithOne(e => e.Sale)
-        .HasForeignKey<Sale>(e => e.SalesBrancheId)
-        .IsRequired();
+        //// 1 : 1 => Sale : SalesBranche
+        //builder
+        //.HasOne(e => e.SalesBranche)
+        //.WithOne(e => e.Sale)
+        //.HasForeignKey<Sale>(e => e.SalesBrancheId)
+        //.IsRequired();
 
 
         // 1 : N => Sale : SaleItems
