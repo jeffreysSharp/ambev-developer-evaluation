@@ -13,11 +13,11 @@ public class CreateSaleRequest
     public Guid CustomerId { get; set; }
     public Guid SalesBrancheId { get; set; }
 
-    private readonly List<SaleItem> _saleItems;
-    public IReadOnlyCollection<SaleItem> SaleItems => _saleItems;
+    //private readonly List<SaleItem> _saleItems;
+    //public IReadOnlyCollection<SaleItem> SaleItems => _saleItems;
 
-    // EF Rel.
-    public Customer Customer { get; private set; }
-    public SalesBranch SalesBranche { get; private set; }
+    //// EF Rel.
+    //public Customer Customer { get; private set; }
+    //public SalesBranch SalesBranche { get; private set; }
 
 }
