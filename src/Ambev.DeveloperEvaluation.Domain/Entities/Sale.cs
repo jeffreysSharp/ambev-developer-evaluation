@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Common;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
@@ -7,8 +8,8 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public int SaleNumber { get; set; }
         public decimal TotalSaleAmount { get; set; }
         public decimal Discount { get; set; }
-        public DateTime DateSaleMade { get; set; }
-        public bool Cancelled { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public Status Status { get; set; }
         public Guid CustomerId { get; set; }
         public Guid SalesBrancheId { get; set; }
 

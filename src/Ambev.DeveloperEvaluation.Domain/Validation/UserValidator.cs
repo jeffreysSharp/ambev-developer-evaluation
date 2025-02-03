@@ -22,7 +22,7 @@ public class UserValidator : AbstractValidator<User>
             .WithMessage("Phone number must start with '+' followed by 11-15 digits.");
         
         RuleFor(user => user.Status)
-            .NotEqual(UserStatus.Unknown)
+            .NotEqual(Status.Unknown)
             .WithMessage("User status cannot be Unknown.");
         
         RuleFor(user => user.Role)

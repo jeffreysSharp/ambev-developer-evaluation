@@ -35,5 +35,5 @@ public class GetUserResult
     /// <summary>
     /// The current status of the user
     /// </summary>
-    public UserStatus Status { get; set; }
+    public Status Status { get; set; }
 }

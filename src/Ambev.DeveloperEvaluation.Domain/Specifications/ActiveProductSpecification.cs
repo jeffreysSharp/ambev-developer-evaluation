@@ -7,6 +7,6 @@ public class ActiveProductSpecification : ISpecification<Product>
 {
     public bool IsSatisfiedBy(Product product)
     {
-        return product.Status == ProductStatus.Active;
+        return product.Status == Status.Active;
     }
 }

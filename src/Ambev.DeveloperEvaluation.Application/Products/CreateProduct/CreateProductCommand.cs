@@ -1,6 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Application.Products.CreateProduct;
 using Ambev.DeveloperEvaluation.Common.Validation;
-using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Domain.Enums;
 using MediatR;
 
@@ -14,7 +13,7 @@ public class CreateProductCommand : IRequest<CreateProductResult>
     public string Image { get; set; } = string.Empty;
     public int Stock { get; set; }
     public DateTime CreatedAt { get; set; }
-    public ProductStatus Status { get; set; }
+    public Status Status { get; set; }
     
     public ValidationResultDetail Validate()
     {
