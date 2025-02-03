@@ -1,0 +1,9 @@
+{
+  "saleNumber": 1,
+  "totalSaleAmount": 10,
+  "discount": 10,
+  "dateSaleMade": "2025-02-03T21:00:14.884Z",
+  "cancelled": false,
+  "customerId": "1f48eeee-4d8b-4312-acf4-56f1243e3c44",
+  "salesBrancheId": "0e8802bd-d427-4c5c-9ccd-af0b40594eb7"
+}

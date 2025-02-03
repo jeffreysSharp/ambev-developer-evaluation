@@ -1,6 +1,6 @@
 @Ambev.DeveloperEvaluation.SalesApi_HostAddress = http://localhost:5231
 
-GET {{Ambev.DeveloperEvaluation.SalesApi_HostAddress}}/weatherforecast/
+GET {{Ambev.DeveloperEvaluation.SalesApi_HostAddress}}/sales/
 Accept: application/json
 
 ###
