@@ -7,8 +7,7 @@ namespace Ambev.SalesApi.Application.Sales.CreateSale;
 public class CreateSaleCommand : IRequest<CreateSaleResult>
 {
     public int SaleNumber { get; set; }
-    public decimal TotalSaleAmount { get; set; }
-    public decimal Discount { get; set; }
+    public double TotalSaleAmount { get; set; }
     public DateTime CreatedAt { get; set; }
     public bool Cancelled { get; set; }
     public Guid CustomerId { get; set; }
