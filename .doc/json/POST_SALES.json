@@ -2,7 +2,7 @@
   "saleNumber": 1,
   "totalSaleAmount": 10,
   "discount": 10,
-  "dateSaleMade": "2025-02-03T21:00:14.884Z",
+  "createdAt": "2025-02-03T21:00:14.884Z",
   "cancelled": false,
   "customerId": "0e72e824-615c-461e-9249-f0cc06257278",
   "salesBrancheId": "0fa8e63e-f881-40ee-82ad-5d2e039fc8e3"

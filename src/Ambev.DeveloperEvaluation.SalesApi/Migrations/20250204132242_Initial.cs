@@ -119,7 +119,6 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     SaleId = table.Column<Guid>(type: "uuid", nullable: false),
                     ProductId = table.Column<Guid>(type: "uuid", nullable: false),
-                    ProductName = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Quantity = table.Column<int>(type: "integer", nullable: false),
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
                     Status = table.Column<int>(type: "integer", nullable: false)
@@ -146,15 +145,15 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Email", "Name", "Phone", "SocialNumber", "Status" },
                 values: new object[,]
                 {
-                    { new Guid("0e72e824-615c-461e-9249-f0cc06257278"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(865), "rmcclary8@nbcnews.com", "Robinett McClary", "6461435318", "884-29-8560", 1 },
-                    { new Guid("6cd7f643-e0d9-469b-b0a4-1a7a9c97c8c5"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(851), "ppillman4@parallels.com", "Phyllys Pillman", "4453959379", "512-17-6944", 1 },
-                    { new Guid("851507b8-c4a4-4eed-bde7-ff29b74d7f1d"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(858), "baulsford6@goo.gl", "Binnie Aulsford", "9814345966", "552-29-4372", 1 },
-                    { new Guid("9435d6a7-07f8-4a12-86e3-9caf9a1f8c30"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(847), "esimmons3@webeden.co.uk", "Eloise Simmons", "5673473269", "687-16-2264", 1 },
-                    { new Guid("a0b0b471-6afc-4c12-ba5a-f3c04f3eeab5"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(854), "hodeoran5@about.com", "Hildagarde O'Deoran", "4707864856", "457-86-4530", 1 },
-                    { new Guid("b059c38c-497c-4031-a378-486c9fb9ae43"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(861), "lcranney7@walmart.com", "Leonid Cranney", "7247173033", "523-53-3047", 1 },
-                    { new Guid("d68102c9-1ff1-4a15-9592-bf7281d693bc"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(834), "ameckiff1@icio.us", "Archie Meckiff", "1251145281", "117-25-1588", 1 },
-                    { new Guid("d84302b2-38a5-4890-a097-3f682e22b0f2"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(843), "bpetracek2@dagondesign.com", "Bethina Petracek", "2784864410", "807-31-1052", 1 },
-                    { new Guid("f0bd57bd-df9f-4ffd-9f13-a5f8ba97a20b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(868), "blujan9@exblog.jp", "Barbra Lujan", "3958797276", "314-65-1589", 1 }
+                    { new Guid("271cd039-421d-4527-b5a6-8628ceb22476"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7995), "ameckiff1@icio.us", "Archie Meckiff", "1251145281", "117-25-1588", 1 },
+                    { new Guid("366dd965-ea7b-4497-a563-001c3ee7cb45"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8010), "baulsford6@goo.gl", "Binnie Aulsford", "9814345966", "552-29-4372", 1 },
+                    { new Guid("455138fd-4148-44a1-9294-7c10056d6357"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8005), "ppillman4@parallels.com", "Phyllys Pillman", "4453959379", "512-17-6944", 1 },
+                    { new Guid("8a8b7deb-2da3-423d-b6ee-1bb98a550dab"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8007), "hodeoran5@about.com", "Hildagarde O'Deoran", "4707864856", "457-86-4530", 1 },
+                    { new Guid("9e895ff9-ef4e-4484-a1ab-fb4ee34ae916"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8012), "lcranney7@walmart.com", "Leonid Cranney", "7247173033", "523-53-3047", 1 },
+                    { new Guid("a2bce999-9078-43c5-a07f-dda872426ba7"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8017), "blujan9@exblog.jp", "Barbra Lujan", "3958797276", "314-65-1589", 1 },
+                    { new Guid("b5ad3765-3f41-44bb-a863-d42a03efc60e"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8014), "rmcclary8@nbcnews.com", "Robinett McClary", "6461435318", "884-29-8560", 1 },
+                    { new Guid("c180df72-7893-4c43-9aac-cc3e285f56db"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7998), "bpetracek2@dagondesign.com", "Bethina Petracek", "2784864410", "807-31-1052", 1 },
+                    { new Guid("e636ec5b-47bd-4368-8277-3625162b2f00"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8002), "esimmons3@webeden.co.uk", "Eloise Simmons", "5673473269", "687-16-2264", 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -162,20 +161,20 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Description", "Image", "Name", "Price", "Status", "Stock" },
                 values: new object[,]
                 {
-                    { new Guid("0218022f-b28a-4186-b38a-adb79b4b03a0"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(738), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
-                    { new Guid("043fda51-5f45-4ef7-9fac-1dda0c20a9f3"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(702), "Guaraná Antarctica Zero 2L", "image.jpg", "Guaraná Antarctica Zero", 9.4900000000000002, 1, 100 },
-                    { new Guid("0c69bcd8-a0f4-40af-b986-e2ec383b46f9"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(734), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
-                    { new Guid("1cdbb9e1-30d7-4c64-8361-b2a6b2ed7d0c"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(706), "Guaraná Antarctica 2L", "image.jpg", "Guaraná Antarctica", 9.4900000000000002, 1, 100 },
-                    { new Guid("1e11394a-241a-46b9-8b63-1eca0c97252a"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(745), "Sukita Uva 350ml", "image.jpg", "Sukita Uva 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("4a81f541-ee75-4434-802c-3e0fea9934e2"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(731), "Soda Antarctica Zero 2L", "image.jpg", "Soda Antarctica Zero 2L", 8.1899999999999995, 1, 100 },
-                    { new Guid("73ba83aa-5457-413a-814e-b80d0015eca7"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(713), "Sukita 2L", "image.jpg", "Sukita 2L", 6.29, 1, 100 },
-                    { new Guid("81332a02-f937-4e13-91ea-9a68fb5d5349"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(710), "Guaraná Antarctica 350ml Lata", "image.jpg", "Guaraná Antarctica 350ml", 3.3900000000000001, 1, 100 },
-                    { new Guid("952a9e54-c256-4e73-95a8-17ea241d61e9"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(741), "Tônica Antarctica Gengibre 269ml", "image.jpg", "Tônica Antarctica Gengibre 269ml", 2.6899999999999999, 1, 100 },
-                    { new Guid("d99e5619-acf8-4457-8072-8764d3bf9465"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(727), "Pepsi Twist 350ml", "image.jpg", "Pepsi Twist 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("e16b8014-2d59-4eb0-94b9-63d32b5ce612"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(694), "Guaraná Antarctica Zero 350ml Lata", "image.jpg", "Guaraná Antarctica Zero", 3.3900000000000001, 1, 100 },
-                    { new Guid("ea422f67-faf9-471c-9697-e787a9f10e12"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(717), "Soda Antarctica 350ml", "image.jpg", "Soda Antarctica 350ml", 2.9900000000000002, 1, 100 },
-                    { new Guid("f66f4753-699b-421a-bf3f-8d46a9ac6477"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(749), "Sukita 1L", "image.jpg", "Sukita 1L", 4.8899999999999997, 1, 100 },
-                    { new Guid("ff779b48-d32d-4594-846e-bb73774a2179"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(698), "Pepsi Black 350ml Lata", "image.jpg", "Pepsi Black 350ml", 2.6899999999999999, 1, 100 }
+                    { new Guid("230168d5-4fc4-499b-b67e-f8b04c901d85"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7927), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
+                    { new Guid("4ac72fff-c897-4126-ab19-dd2756451d96"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7906), "Sukita 2L", "image.jpg", "Sukita 2L", 6.29, 1, 100 },
+                    { new Guid("4c653cff-229f-48f7-abf5-c1cf66823093"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7901), "Guaraná Antarctica 2L", "image.jpg", "Guaraná Antarctica", 9.4900000000000002, 1, 100 },
+                    { new Guid("58bbc2f5-7416-4419-8748-7ac584acb352"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7933), "Tônica Antarctica Gengibre 269ml", "image.jpg", "Tônica Antarctica Gengibre 269ml", 2.6899999999999999, 1, 100 },
+                    { new Guid("63f35e42-8f53-4a27-a0c7-06ed75391b25"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7930), "Tônica Antarctica 350ml", "image.jpg", "Tônica Antarctica 350ml", 3.5899999999999999, 1, 100 },
+                    { new Guid("7c48f801-5dbd-40ee-b41c-b04c64cd75de"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7896), "Pepsi Black 350ml Lata", "image.jpg", "Pepsi Black 350ml", 2.6899999999999999, 1, 100 },
+                    { new Guid("7fa0352c-fc7f-4f75-b7a4-a294aabb829b"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7938), "Sukita 1L", "image.jpg", "Sukita 1L", 4.8899999999999997, 1, 100 },
+                    { new Guid("842a0194-b06c-4ad2-aaec-9d67892742b2"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7899), "Guaraná Antarctica Zero 2L", "image.jpg", "Guaraná Antarctica Zero", 9.4900000000000002, 1, 100 },
+                    { new Guid("9e66a4a7-b333-41b3-a794-fa77c1d13bdc"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7910), "Soda Antarctica 350ml", "image.jpg", "Soda Antarctica 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("d9269a37-c3b7-4e7f-a39a-922efae167d9"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7912), "Pepsi Twist 350ml", "image.jpg", "Pepsi Twist 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("debd81f5-7b98-4c63-a482-8f0123bfa093"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7904), "Guaraná Antarctica 350ml Lata", "image.jpg", "Guaraná Antarctica 350ml", 3.3900000000000001, 1, 100 },
+                    { new Guid("e9792765-f7b8-4c82-897b-80b2e274a801"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7936), "Sukita Uva 350ml", "image.jpg", "Sukita Uva 350ml", 2.9900000000000002, 1, 100 },
+                    { new Guid("f5a14523-ceba-4b9d-825f-a53a8db6630f"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7891), "Guaraná Antarctica Zero 350ml Lata", "image.jpg", "Guaraná Antarctica Zero", 3.3900000000000001, 1, 100 },
+                    { new Guid("ffe564eb-da81-4497-be09-fe9333de6ec2"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7916), "Soda Antarctica Zero 2L", "image.jpg", "Soda Antarctica Zero 2L", 8.1899999999999995, 1, 100 }
                 });
 
             migrationBuilder.InsertData(
@@ -183,16 +182,16 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Name", "State", "Status" },
                 values: new object[,]
                 {
-                    { new Guid("0fa8e63e-f881-40ee-82ad-5d2e039fc8e3"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(962), "Jaguariúna", "SP", 1 },
-                    { new Guid("5c9cb422-f7b1-47d5-b115-7bdffe902b14"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(934), "Camaçari", "BA", 1 },
-                    { new Guid("6414124f-2154-4bfc-a7d5-fe8db16d243b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(945), "Curitiba", "PR", 1 },
-                    { new Guid("7fdd65fd-05cf-440a-96b5-750200b2e1ef"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(956), "Jacareí", "SP", 1 },
-                    { new Guid("ad2bb90b-f014-4e03-a932-2b804cdfc26b"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(938), "Caruaru", "PE", 1 },
-                    { new Guid("bb4b9e3e-52f4-43d1-9ab0-74f9a676a922"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(950), "Itajáí", "SC", 1 },
-                    { new Guid("e3927d22-d28e-4545-a7a8-03f2f8f613df"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(953), "Itapissuma", "PE", 1 },
-                    { new Guid("f68d81fb-eeaa-49b2-9528-a8c3fd49d196"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(942), "Contagem", "MG", 1 },
-                    { new Guid("f89908fc-e13d-4e46-9c44-35f44ea90537"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(948), "Guarulhos", "SP", 1 },
-                    { new Guid("fd388b70-c6f0-4c34-b4dc-ebb9fb587f74"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(965), "Jundiaí", "SP", 1 }
+                    { new Guid("0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8061), "Caruaru", "PE", 1 },
+                    { new Guid("28ced3eb-027c-4d7b-a689-52ae4b04dc60"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8073), "Itapissuma", "PE", 1 },
+                    { new Guid("3033ae94-060e-4343-ae4b-10912207a58e"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8063), "Contagem", "MG", 1 },
+                    { new Guid("3b97be5a-165c-4c65-97b8-717b52bdcc8f"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8077), "Jaguariúna", "SP", 1 },
+                    { new Guid("7102849b-38dc-4b08-b598-117b92455984"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8079), "Jundiaí", "SP", 1 },
+                    { new Guid("82d01876-9ce5-43f2-b872-f2f838652a82"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8058), "Camaçari", "BA", 1 },
+                    { new Guid("9e1408e3-d9dc-45d4-868a-41518512fa18"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8065), "Curitiba", "PR", 1 },
+                    { new Guid("d7e7b5e2-e159-413a-958a-3babbb72e0d3"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8067), "Guarulhos", "SP", 1 },
+                    { new Guid("f810cf41-08bf-4703-bd80-6096f8034aa8"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8075), "Jacareí", "SP", 1 },
+                    { new Guid("fd883c2c-6c26-4bbc-b60b-5bfda7e72152"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8069), "Itajáí", "SC", 1 }
                 });
 
             migrationBuilder.InsertData(
@@ -200,10 +199,10 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                 columns: new[] { "Id", "CreatedAt", "Email", "Password", "Phone", "Role", "Status", "UpdatedAt", "Username" },
                 values: new object[,]
                 {
-                    { new Guid("205b14c3-5b78-4df0-a3f4-bc44b821d1a4"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(119), "kdurn1@51.la", "guetH908~", "2129615239", "Manager", "Active", null, "harkin1" },
-                    { new Guid("50213d88-dc36-4670-b351-a435a26e53f6"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(138), "freicharz2@irs.gov", "vxpeC202\"+", "6155049411", "Customer", "Active", null, "bquare2" },
-                    { new Guid("8432d35d-4f79-493c-9ccd-a69a81912d1a"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(109), "jeferson.almeida@ambev.com", "Teste@123", "11997541210", "Admin", "Active", null, "jeferson.almeida" },
-                    { new Guid("c7c02971-074d-4a02-87c0-692df1bf1b5d"), new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(114), "cdepinna0@ucsd.edu", "ypgeD344.s", "9023970118", "Admin", "Active", null, "nsloane0" }
+                    { new Guid("82d298ed-ffba-4ede-b907-c4ade280d538"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7631), "freicharz2@irs.gov", "vxpeC202\"+", "6155049411", "Customer", "Active", null, "bquare2" },
+                    { new Guid("a660d744-fae9-4539-9fa6-5a7cd346df60"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7618), "jeferson.almeida@ambev.com", "Teste@123", "11997541210", "Admin", "Active", null, "jeferson.almeida" },
+                    { new Guid("c72f4e16-7751-4604-940f-5d2512301a83"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7627), "kdurn1@51.la", "guetH908~", "2129615239", "Manager", "Active", null, "harkin1" },
+                    { new Guid("de74526e-5311-409f-a3d2-a0f0ec44f475"), new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7623), "cdepinna0@ucsd.edu", "ypgeD344.s", "9023970118", "Admin", "Active", null, "nsloane0" }
                 });
 
             migrationBuilder.CreateIndex(
