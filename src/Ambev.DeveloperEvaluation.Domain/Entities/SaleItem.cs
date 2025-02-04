@@ -1,6 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Common;
 using Ambev.DeveloperEvaluation.Domain.Enums;
-using System.Diagnostics;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
@@ -8,7 +7,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
     {
         public Guid SaleId { get; private set; }
         public Guid ProductId { get; private set; }
-        public string ProductName { get; private set; }
         public int Quantity { get; private set; }
         public decimal Price { get; private set; }
         public Status Status { get; set; }
@@ -17,11 +15,10 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public Sale Sale { get; set; }
         public Product Product { get; set; }
 
-        public SaleItem(Guid productId, string productName, int quantity,
+        public SaleItem(Guid productId, int quantity,
                         decimal price, string productImage = null)
         {
             ProductId = productId;
-            ProductName = productName;
             Quantity = quantity;
             Price = price;
         }

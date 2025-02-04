@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
 {
     [DbContext(typeof(DefaultContext))]
-    [Migration("20250203222316_Initial")]
+    [Migration("20250204132242_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -64,8 +64,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d68102c9-1ff1-4a15-9592-bf7281d693bc"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(834),
+                            Id = new Guid("271cd039-421d-4527-b5a6-8628ceb22476"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7995),
                             Email = "ameckiff1@icio.us",
                             Name = "Archie Meckiff",
                             Phone = "1251145281",
@@ -74,8 +74,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d84302b2-38a5-4890-a097-3f682e22b0f2"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(843),
+                            Id = new Guid("c180df72-7893-4c43-9aac-cc3e285f56db"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7998),
                             Email = "bpetracek2@dagondesign.com",
                             Name = "Bethina Petracek",
                             Phone = "2784864410",
@@ -84,8 +84,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9435d6a7-07f8-4a12-86e3-9caf9a1f8c30"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(847),
+                            Id = new Guid("e636ec5b-47bd-4368-8277-3625162b2f00"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8002),
                             Email = "esimmons3@webeden.co.uk",
                             Name = "Eloise Simmons",
                             Phone = "5673473269",
@@ -94,8 +94,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6cd7f643-e0d9-469b-b0a4-1a7a9c97c8c5"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(851),
+                            Id = new Guid("455138fd-4148-44a1-9294-7c10056d6357"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8005),
                             Email = "ppillman4@parallels.com",
                             Name = "Phyllys Pillman",
                             Phone = "4453959379",
@@ -104,8 +104,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a0b0b471-6afc-4c12-ba5a-f3c04f3eeab5"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(854),
+                            Id = new Guid("8a8b7deb-2da3-423d-b6ee-1bb98a550dab"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8007),
                             Email = "hodeoran5@about.com",
                             Name = "Hildagarde O'Deoran",
                             Phone = "4707864856",
@@ -114,8 +114,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("851507b8-c4a4-4eed-bde7-ff29b74d7f1d"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(858),
+                            Id = new Guid("366dd965-ea7b-4497-a563-001c3ee7cb45"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8010),
                             Email = "baulsford6@goo.gl",
                             Name = "Binnie Aulsford",
                             Phone = "9814345966",
@@ -124,8 +124,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b059c38c-497c-4031-a378-486c9fb9ae43"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(861),
+                            Id = new Guid("9e895ff9-ef4e-4484-a1ab-fb4ee34ae916"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8012),
                             Email = "lcranney7@walmart.com",
                             Name = "Leonid Cranney",
                             Phone = "7247173033",
@@ -134,8 +134,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0e72e824-615c-461e-9249-f0cc06257278"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(865),
+                            Id = new Guid("b5ad3765-3f41-44bb-a863-d42a03efc60e"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8014),
                             Email = "rmcclary8@nbcnews.com",
                             Name = "Robinett McClary",
                             Phone = "6461435318",
@@ -144,8 +144,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f0bd57bd-df9f-4ffd-9f13-a5f8ba97a20b"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(868),
+                            Id = new Guid("a2bce999-9078-43c5-a07f-dda872426ba7"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8017),
                             Email = "blujan9@exblog.jp",
                             Name = "Barbra Lujan",
                             Phone = "3958797276",
@@ -194,8 +194,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e16b8014-2d59-4eb0-94b9-63d32b5ce612"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(694),
+                            Id = new Guid("f5a14523-ceba-4b9d-825f-a53a8db6630f"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7891),
                             Description = "Guaraná Antarctica Zero 350ml Lata",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica Zero",
@@ -205,8 +205,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ff779b48-d32d-4594-846e-bb73774a2179"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(698),
+                            Id = new Guid("7c48f801-5dbd-40ee-b41c-b04c64cd75de"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7896),
                             Description = "Pepsi Black 350ml Lata",
                             Image = "image.jpg",
                             Name = "Pepsi Black 350ml",
@@ -216,8 +216,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("043fda51-5f45-4ef7-9fac-1dda0c20a9f3"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(702),
+                            Id = new Guid("842a0194-b06c-4ad2-aaec-9d67892742b2"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7899),
                             Description = "Guaraná Antarctica Zero 2L",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica Zero",
@@ -227,8 +227,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1cdbb9e1-30d7-4c64-8361-b2a6b2ed7d0c"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(706),
+                            Id = new Guid("4c653cff-229f-48f7-abf5-c1cf66823093"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7901),
                             Description = "Guaraná Antarctica 2L",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica",
@@ -238,8 +238,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("81332a02-f937-4e13-91ea-9a68fb5d5349"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(710),
+                            Id = new Guid("debd81f5-7b98-4c63-a482-8f0123bfa093"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7904),
                             Description = "Guaraná Antarctica 350ml Lata",
                             Image = "image.jpg",
                             Name = "Guaraná Antarctica 350ml",
@@ -249,8 +249,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("73ba83aa-5457-413a-814e-b80d0015eca7"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(713),
+                            Id = new Guid("4ac72fff-c897-4126-ab19-dd2756451d96"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7906),
                             Description = "Sukita 2L",
                             Image = "image.jpg",
                             Name = "Sukita 2L",
@@ -260,8 +260,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ea422f67-faf9-471c-9697-e787a9f10e12"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(717),
+                            Id = new Guid("9e66a4a7-b333-41b3-a794-fa77c1d13bdc"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7910),
                             Description = "Soda Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Soda Antarctica 350ml",
@@ -271,8 +271,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d99e5619-acf8-4457-8072-8764d3bf9465"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(727),
+                            Id = new Guid("d9269a37-c3b7-4e7f-a39a-922efae167d9"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7912),
                             Description = "Pepsi Twist 350ml",
                             Image = "image.jpg",
                             Name = "Pepsi Twist 350ml",
@@ -282,8 +282,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4a81f541-ee75-4434-802c-3e0fea9934e2"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(731),
+                            Id = new Guid("ffe564eb-da81-4497-be09-fe9333de6ec2"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7916),
                             Description = "Soda Antarctica Zero 2L",
                             Image = "image.jpg",
                             Name = "Soda Antarctica Zero 2L",
@@ -293,8 +293,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0c69bcd8-a0f4-40af-b986-e2ec383b46f9"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(734),
+                            Id = new Guid("230168d5-4fc4-499b-b67e-f8b04c901d85"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7927),
                             Description = "Tônica Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica 350ml",
@@ -304,8 +304,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0218022f-b28a-4186-b38a-adb79b4b03a0"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(738),
+                            Id = new Guid("63f35e42-8f53-4a27-a0c7-06ed75391b25"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7930),
                             Description = "Tônica Antarctica 350ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica 350ml",
@@ -315,8 +315,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("952a9e54-c256-4e73-95a8-17ea241d61e9"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(741),
+                            Id = new Guid("58bbc2f5-7416-4419-8748-7ac584acb352"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7933),
                             Description = "Tônica Antarctica Gengibre 269ml",
                             Image = "image.jpg",
                             Name = "Tônica Antarctica Gengibre 269ml",
@@ -326,8 +326,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1e11394a-241a-46b9-8b63-1eca0c97252a"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(745),
+                            Id = new Guid("e9792765-f7b8-4c82-897b-80b2e274a801"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7936),
                             Description = "Sukita Uva 350ml",
                             Image = "image.jpg",
                             Name = "Sukita Uva 350ml",
@@ -337,8 +337,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f66f4753-699b-421a-bf3f-8d46a9ac6477"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(749),
+                            Id = new Guid("7fa0352c-fc7f-4f75-b7a4-a294aabb829b"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7938),
                             Description = "Sukita 1L",
                             Image = "image.jpg",
                             Name = "Sukita 1L",
@@ -398,11 +398,6 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("integer");
 
@@ -450,80 +445,80 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("5c9cb422-f7b1-47d5-b115-7bdffe902b14"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(934),
+                            Id = new Guid("82d01876-9ce5-43f2-b872-f2f838652a82"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8058),
                             Name = "Camaçari",
                             State = "BA",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("ad2bb90b-f014-4e03-a932-2b804cdfc26b"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(938),
+                            Id = new Guid("0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8061),
                             Name = "Caruaru",
                             State = "PE",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("f68d81fb-eeaa-49b2-9528-a8c3fd49d196"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(942),
+                            Id = new Guid("3033ae94-060e-4343-ae4b-10912207a58e"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8063),
                             Name = "Contagem",
                             State = "MG",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("6414124f-2154-4bfc-a7d5-fe8db16d243b"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(945),
+                            Id = new Guid("9e1408e3-d9dc-45d4-868a-41518512fa18"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8065),
                             Name = "Curitiba",
                             State = "PR",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("f89908fc-e13d-4e46-9c44-35f44ea90537"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(948),
+                            Id = new Guid("d7e7b5e2-e159-413a-958a-3babbb72e0d3"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8067),
                             Name = "Guarulhos",
                             State = "SP",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("bb4b9e3e-52f4-43d1-9ab0-74f9a676a922"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(950),
+                            Id = new Guid("fd883c2c-6c26-4bbc-b60b-5bfda7e72152"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8069),
                             Name = "Itajáí",
                             State = "SC",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("e3927d22-d28e-4545-a7a8-03f2f8f613df"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(953),
+                            Id = new Guid("28ced3eb-027c-4d7b-a689-52ae4b04dc60"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8073),
                             Name = "Itapissuma",
                             State = "PE",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("7fdd65fd-05cf-440a-96b5-750200b2e1ef"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(956),
+                            Id = new Guid("f810cf41-08bf-4703-bd80-6096f8034aa8"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8075),
                             Name = "Jacareí",
                             State = "SP",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("0fa8e63e-f881-40ee-82ad-5d2e039fc8e3"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(962),
+                            Id = new Guid("3b97be5a-165c-4c65-97b8-717b52bdcc8f"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8077),
                             Name = "Jaguariúna",
                             State = "SP",
                             Status = 1
                         },
                         new
                         {
-                            Id = new Guid("fd388b70-c6f0-4c34-b4dc-ebb9fb587f74"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(965),
+                            Id = new Guid("7102849b-38dc-4b08-b598-117b92455984"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(8079),
                             Name = "Jundiaí",
                             State = "SP",
                             Status = 1
@@ -580,8 +575,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8432d35d-4f79-493c-9ccd-a69a81912d1a"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(109),
+                            Id = new Guid("a660d744-fae9-4539-9fa6-5a7cd346df60"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7618),
                             Email = "jeferson.almeida@ambev.com",
                             Password = "Teste@123",
                             Phone = "11997541210",
@@ -591,8 +586,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c7c02971-074d-4a02-87c0-692df1bf1b5d"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(114),
+                            Id = new Guid("de74526e-5311-409f-a3d2-a0f0ec44f475"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7623),
                             Email = "cdepinna0@ucsd.edu",
                             Password = "ypgeD344.s",
                             Phone = "9023970118",
@@ -602,8 +597,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("205b14c3-5b78-4df0-a3f4-bc44b821d1a4"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(119),
+                            Id = new Guid("c72f4e16-7751-4604-940f-5d2512301a83"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7627),
                             Email = "kdurn1@51.la",
                             Password = "guetH908~",
                             Phone = "2129615239",
@@ -613,8 +608,8 @@ namespace Ambev.DeveloperEvaluation.SalesApi.Migrations
                         },
                         new
                         {
-                            Id = new Guid("50213d88-dc36-4670-b351-a435a26e53f6"),
-                            CreatedAt = new DateTime(2025, 2, 3, 22, 23, 15, 618, DateTimeKind.Utc).AddTicks(138),
+                            Id = new Guid("82d298ed-ffba-4ede-b907-c4ade280d538"),
+                            CreatedAt = new DateTime(2025, 2, 4, 13, 22, 41, 607, DateTimeKind.Utc).AddTicks(7631),
                             Email = "freicharz2@irs.gov",
                             Password = "vxpeC202\"+",
                             Phone = "6155049411",
