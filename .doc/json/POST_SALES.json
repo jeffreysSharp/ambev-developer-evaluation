@@ -1,9 +1,9 @@
 {
-  "saleNumber": 1,
-  "totalSaleAmount": 10,
+  "saleNumber": 2,
+  "totalSaleAmount": 99.99,
   "discount": 10,
-  "createdAt": "2025-02-03T21:00:14.884Z",
+  "createdAt": "2025-02-04T20:42:51.015Z",
   "cancelled": false,
-  "customerId": "0e72e824-615c-461e-9249-f0cc06257278",
-  "salesBrancheId": "0fa8e63e-f881-40ee-82ad-5d2e039fc8e3"
+  "customerId": "271cd039-421d-4527-b5a6-8628ceb22476",
+  "salesBrancheId": "0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"
 }
