@@ -12,14 +12,17 @@ public class SaleItemConfiguration : IEntityTypeConfiguration<SaleItem>
 
         builder.HasKey(u => u.Id);
         builder.Property(u => u.Id).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
+        builder.Property(u => u.Quantity).IsRequired();
+        builder.Property(u => u.Price).IsRequired();
+        builder.Property(u => u.TotalSaleItemAmount).IsRequired();
+        builder.Property(u => u.TotalPriceDiscount).IsRequired();
+        builder.Property(u => u.Status).IsRequired();
+
         builder.Property(u => u.SaleId).IsRequired();
         builder.Property(u => u.ProductId).IsRequired();
 
-        // 1 : 1 => SaleItems : Product
-        builder
-        .HasOne(e => e.Product)
-        .WithOne(e => e.SaleItem)
-        .HasForeignKey<SaleItem>(e => e.SaleId)
-        .IsRequired();
+        // 1 : 1 => SaleItem : Product
+        builder.HasOne(c => c.Product)
+                .WithOne(c => c.SaleItem);
     }
 }

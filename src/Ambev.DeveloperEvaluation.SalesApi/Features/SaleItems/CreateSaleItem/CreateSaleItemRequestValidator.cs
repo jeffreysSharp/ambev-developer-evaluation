@@ -6,6 +6,7 @@ public class CreateSaleItemRequestValidator : AbstractValidator<CreateSaleItemRe
 {
     public CreateSaleItemRequestValidator()
     {
+
         RuleFor(saleItem => saleItem.ProductId).NotEmpty();
         RuleFor(saleItem => saleItem.SaleId).NotEmpty();
     }
