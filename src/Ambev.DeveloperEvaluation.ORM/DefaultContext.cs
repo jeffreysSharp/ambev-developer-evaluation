@@ -447,6 +447,50 @@ public class DefaultContext : DbContext
             });
         #endregion
 
+        #region Insert Sale Items
+        modelBuilder.Entity<SaleItem>().HasData(
+            new SaleItem
+            {
+                Id = Guid.Parse("a07e4de7-d0bf-4706-bcc9-54d22f07b918"),
+                Quantity = 10,
+                Price = 3.59,
+                TotalSaleItemAmount = 36.90,
+                Discount = 10,
+                TotalPriceDiscount = 33.21,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("230168d5-4fc4-499b-b67e-f8b04c901d85"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new SaleItem
+            {
+                Id = Guid.Parse("44151fb7-26d6-43fe-8c41-f35afe2b225a"),
+                Quantity = 10,
+                Price = 6.29,
+                TotalSaleItemAmount = 62.90,
+                Discount = 10,
+                TotalPriceDiscount = 56.61,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("4ac72fff-c897-4126-ab19-dd2756451d96"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new SaleItem
+            {
+                Id = Guid.Parse("52a842c5-8312-4507-a597-29e1b542e873"),
+                Quantity = 10,
+                Price = 9.49,
+                TotalSaleItemAmount = 94.90,
+                Discount = 10,
+                TotalPriceDiscount = 85.41,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("4c653cff-229f-48f7-abf5-c1cf66823093"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            }
+        );
+        #endregion
+
     }
 
     public class YourDbContextFactory : IDesignTimeDbContextFactory<DefaultContext>
