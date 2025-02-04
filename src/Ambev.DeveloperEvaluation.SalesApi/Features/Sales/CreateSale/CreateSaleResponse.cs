@@ -15,8 +15,4 @@ public class CreateSaleResponse
 
     private readonly List<SaleItem> _saleItems;
     public IReadOnlyCollection<SaleItem> SaleItems => _saleItems;
-
-    // EF Rel.
-    public Customer Customer { get; private set; }
-    public SalesBranch SalesBranche { get; private set; }
 }

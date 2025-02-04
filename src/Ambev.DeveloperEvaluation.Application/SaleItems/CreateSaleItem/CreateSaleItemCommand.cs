@@ -11,7 +11,9 @@ public class CreateSaleItemCommand : IRequest<CreateSaleItemResult>
     public Guid ProductId { get; private set; }
     public int Quantity { get; private set; }
     public decimal Price { get; private set; }
-    public Status Status { get; set; }
+    public decimal TotalSaleItemAmount { get; set; }
+    public decimal Dicount { get; set; }
+    public decimal TotalPriceDiscount { get; set; }
 
     // EF Rel.
     public Sale Sale { get; set; }
