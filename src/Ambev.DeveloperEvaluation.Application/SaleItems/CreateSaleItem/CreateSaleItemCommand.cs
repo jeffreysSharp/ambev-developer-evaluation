@@ -1,6 +1,4 @@
 ﻿using Ambev.DeveloperEvaluation.Common.Validation;
-using Ambev.DeveloperEvaluation.Domain.Entities;
-using Ambev.DeveloperEvaluation.Domain.Enums;
 using MediatR;
 
 namespace Ambev.SalesApi.Application.SaleItems.CreateSaleItem;
@@ -16,8 +14,8 @@ public class CreateSaleItemCommand : IRequest<CreateSaleItemResult>
     public decimal TotalPriceDiscount { get; set; }
 
     // EF Rel.
-    public Sale Sale { get; set; }
-    public Product Product { get; set; }
+    //public Sale Sale { get; set; }
+    //public Product Product { get; set; }
 
 
     public ValidationResultDetail Validate()

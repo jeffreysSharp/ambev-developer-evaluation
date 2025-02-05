@@ -12,8 +12,9 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 
         builder.HasKey(u => u.Id);
         builder.Property(u => u.Id).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
-        builder.Property(u => u.Name).IsRequired().HasMaxLength(50);
+        builder.Property(u => u.Name).IsRequired().HasMaxLength(100);
         builder.Property(u => u.Email).IsRequired().HasMaxLength(50);
-        builder.Property(u => u.SocialNumber).IsRequired().HasMaxLength(50);
+        builder.Property(u => u.Phone).IsRequired().HasMaxLength(15);
+        builder.Property(u => u.SocialNumber).IsRequired().HasMaxLength(15);
     }
 }
