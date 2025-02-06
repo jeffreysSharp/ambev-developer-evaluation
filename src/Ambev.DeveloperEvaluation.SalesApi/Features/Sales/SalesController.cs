@@ -40,7 +40,7 @@ public class SalesController : BaseController
         {
             foreach (var saleItem in request.SaleItems)
             {   var saleItemRequest = new CreateSaleItemRequest();
-                saleItemRequest.SaleId = saleItem.Id;
+                saleItemRequest.SaleId = response.Id;
                 saleItemRequest.ProductId = saleItem.ProductId;
                 saleItemRequest.Quantity = saleItem.Quantity;
                 saleItemRequest.Price = saleItem.Price;

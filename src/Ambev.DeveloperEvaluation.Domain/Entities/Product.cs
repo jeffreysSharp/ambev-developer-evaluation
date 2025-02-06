@@ -15,7 +15,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public Status Status { get; set; }
-        public SaleItem SaleItem { get; set; }
         public ValidationResultDetail Validate()
         {
             var validator = new ProductValidator();
