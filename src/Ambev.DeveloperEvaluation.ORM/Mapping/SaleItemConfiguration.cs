@@ -16,13 +16,14 @@ public class SaleItemConfiguration : IEntityTypeConfiguration<SaleItem>
         builder.Property(u => u.Price).IsRequired();
         builder.Property(u => u.TotalSaleItemAmount).IsRequired();
         builder.Property(u => u.TotalPriceDiscount).IsRequired();
-        builder.Property(u => u.Status).IsRequired();
 
-        builder.Property(u => u.SaleId).IsRequired();
+        //TODO Corrigir erro de duplicação de Chave primária #32        
         builder.Property(u => u.ProductId).IsRequired();
+        builder.Property(u => u.SaleId).IsRequired();
 
         // 1 : 1 => SaleItem : Product
         builder.HasOne(c => c.Product)
-                .WithOne(c => c.SaleItem);
+                    .WithOne(c => c.SaleItem);
+
     }
 }

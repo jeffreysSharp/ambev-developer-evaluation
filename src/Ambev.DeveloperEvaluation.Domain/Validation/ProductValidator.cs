@@ -17,9 +17,9 @@ public class ProductValidator : AbstractValidator<Product>
     RuleFor(product => product.Description)
                 .NotEmpty()
                 .MinimumLength(3).WithMessage("Description must be at least 3 characters long.")
-                .MaximumLength(100).WithMessage("Name cannot be longer than 100 characters.");
+                .MaximumLength(100).WithMessage("Description cannot be longer than 100 characters.");
 
-     RuleFor(product => product.Status)
+        RuleFor(product => product.Status)
             .NotEqual(Status.Unknown)
             .WithMessage("Product status cannot be Unknown.");
 

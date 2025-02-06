@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Entities;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -14,5 +15,7 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
         builder.Property(u => u.Id).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
         builder.Property(u => u.Name).IsRequired().HasMaxLength(50);
         builder.Property(u => u.Description).IsRequired().HasMaxLength(100);
+        builder.Property(u => u.Price).IsRequired();
+        builder.Property(u => u.Stock).IsRequired();
     }
 }

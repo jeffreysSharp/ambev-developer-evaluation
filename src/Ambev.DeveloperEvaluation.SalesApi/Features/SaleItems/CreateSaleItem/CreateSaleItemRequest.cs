@@ -6,10 +6,13 @@ public class CreateSaleItemRequest
 {
     public Guid Id { get; set; }
     public int Quantity { get; set; }
-    public decimal Price { get; set; }
-    public decimal TotalSaleItemAmount { get; set; }
-    public decimal Dicount { get; set; }
-    public decimal TotalPriceDiscount { get; set; }
-    public Guid SaleId { get; set; }
+    public double Price { get; set; }
+    public double TotalSaleItemAmount { get; set; }
+    public double Discount { get; set; }
+    public double TotalPriceDiscount { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
+    public Status Status { get; set; }
     public Guid ProductId { get; set; }
+    public Guid SaleId { get; set; }
 }

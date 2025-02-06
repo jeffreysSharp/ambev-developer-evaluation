@@ -412,26 +412,105 @@ public class DefaultContext : DbContext
            }
          );
         #endregion
-    }
-}
 
-public class YourDbContextFactory : IDesignTimeDbContextFactory<DefaultContext>
-{
-    public DefaultContext CreateDbContext(string[] args)
-    {
-        IConfigurationRoot configuration = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
-            .Build();
+        #region Insert Sales
+        modelBuilder.Entity<Sale>().HasData(
+            new Sale
+            {
+                Id = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                SaleNumber = 1,
+                TotalSaleAmount = 33.90,
+                CustomerId = Guid.Parse("271cd039-421d-4527-b5a6-8628ceb22476"),
+                SalesBrancheId = Guid.Parse("82d01876-9ce5-43f2-b872-f2f838652a82"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new Sale
+            {
+                Id = Guid.Parse("e33ff51d-cc6a-4f1e-92db-008c43b1b1e5"),
+                SaleNumber = 2,
+                TotalSaleAmount = 26.90,
+                CustomerId = Guid.Parse("c180df72-7893-4c43-9aac-cc3e285f56db"),
+                SalesBrancheId = Guid.Parse("0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new Sale
+            {
+                Id = Guid.Parse("a8b93163-6e0f-431f-baac-2c5a0c69bca5"),
+                SaleNumber = 3,
+                TotalSaleAmount = 26.90,
+                CustomerId = Guid.Parse("e636ec5b-47bd-4368-8277-3625162b2f00"),
+                SalesBrancheId = Guid.Parse("3033ae94-060e-4343-ae4b-10912207a58e"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            });
+        #endregion
 
-        var builder = new DbContextOptionsBuilder<DefaultContext>();
-        var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-        builder.UseNpgsql(
-               connectionString,
-               b => b.MigrationsAssembly("Ambev.DeveloperEvaluation.SalesApi")
+        #region Insert Sale Items
+        modelBuilder.Entity<SaleItem>().HasData(
+            new SaleItem
+            {
+                Id = Guid.Parse("a07e4de7-d0bf-4706-bcc9-54d22f07b918"),
+                Quantity = 10,
+                Price = 3.59,
+                TotalSaleItemAmount = 36.90,
+                Discount = 10,
+                TotalPriceDiscount = 33.21,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("230168d5-4fc4-499b-b67e-f8b04c901d85"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new SaleItem
+            {
+                Id = Guid.Parse("44151fb7-26d6-43fe-8c41-f35afe2b225a"),
+                Quantity = 10,
+                Price = 6.29,
+                TotalSaleItemAmount = 62.90,
+                Discount = 10,
+                TotalPriceDiscount = 56.61,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("4ac72fff-c897-4126-ab19-dd2756451d96"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            },
+            new SaleItem
+            {
+                Id = Guid.Parse("52a842c5-8312-4507-a597-29e1b542e873"),
+                Quantity = 10,
+                Price = 9.49,
+                TotalSaleItemAmount = 94.90,
+                Discount = 10,
+                TotalPriceDiscount = 85.41,
+                SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
+                ProductId = Guid.Parse("4c653cff-229f-48f7-abf5-c1cf66823093"),
+                CreatedAt = DateTime.UtcNow,
+                Status = Status.Active
+            }
         );
+        #endregion
 
-        return new DefaultContext(builder.Options);
+    }
+
+    public class YourDbContextFactory : IDesignTimeDbContextFactory<DefaultContext>
+    {
+        public DefaultContext CreateDbContext(string[] args)
+        {
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            var builder = new DbContextOptionsBuilder<DefaultContext>();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+            builder.UseNpgsql(
+                   connectionString,
+                   b => b.MigrationsAssembly("Ambev.DeveloperEvaluation.SalesApi")
+            );
+
+            return new DefaultContext(builder.Options);
+        }
     }
 }

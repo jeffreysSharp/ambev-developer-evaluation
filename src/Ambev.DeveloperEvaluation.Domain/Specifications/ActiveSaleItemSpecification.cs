@@ -3,11 +3,11 @@ using Ambev.DeveloperEvaluation.Domain.Enums;
 
 namespace Ambev.DeveloperEvaluation.Domain.Specifications;
 
-public class ActiveProductSpecification : ISpecification<Product>
+public class ActiveCustomerSpecification : ISpecification<Customer>
 {
-    public bool IsSatisfiedBy(Product product)
+    public bool IsSatisfiedBy(Customer customer)
     {
-        return product.Status == Status.Active;
+        return customer.Status == Status.Active;
     }
 }
  
