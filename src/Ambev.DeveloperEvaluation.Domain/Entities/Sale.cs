@@ -8,7 +8,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
     public class Sale : BaseEntity
     {
         public int SaleNumber { get; set; }
-        public double TotalSaleAmount { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public Status Status { get; set; }
@@ -23,7 +22,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public Sale(int saleNumber, double totalSaleAmount, DateTime createdAt, DateTime? updatedAt, Status status, Guid customerId, Guid salesBrancheId, List<SaleItem> saleItems, Customer customer, SalesBranch salesBranche)
         {
             SaleNumber = saleNumber;
-            TotalSaleAmount = totalSaleAmount;
             CreatedAt = DateTime.UtcNow;
             UpdatedAt = DateTime.UtcNow;
             Status = Status.Active;

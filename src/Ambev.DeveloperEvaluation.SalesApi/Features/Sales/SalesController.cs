@@ -53,16 +53,23 @@ public class SalesController : BaseController
 
     private async void PopularSaleItems(CreateSaleResult response, List<SaleItem> saleItems, CancellationToken cancellationToken)
     {
+        
+
         foreach (var saleItem in saleItems)
         {
+            var discount = 0;
+
+            if (saleItem.Quantity > 4)
+                discount = 10;
+            
             var saleItemRequest = new CreateSaleItemRequest();
             saleItemRequest.SaleId = response.Id;
             saleItemRequest.ProductId = saleItem.ProductId;
             saleItemRequest.Quantity = saleItem.Quantity;
             saleItemRequest.Price = saleItem.Price;
             saleItemRequest.TotalSaleItemAmount = saleItem.Price * saleItem.Quantity;
-            saleItemRequest.Discount = saleItem.Discount;
-            saleItemRequest.TotalPriceDiscount = saleItemRequest.TotalSaleItemAmount - ((saleItemRequest.TotalSaleItemAmount / 100) * saleItem.Discount);
+            saleItemRequest.Discount = discount;
+            saleItemRequest.TotalPriceDiscount = saleItemRequest.TotalSaleItemAmount - ((saleItemRequest.TotalSaleItemAmount / 100) * discount);
 
             var commandSaleImtems = _mapper.Map<CreateSaleItemCommand>(saleItemRequest);
             var responseSaleItems = await _mediator.Send(commandSaleImtems, cancellationToken);
