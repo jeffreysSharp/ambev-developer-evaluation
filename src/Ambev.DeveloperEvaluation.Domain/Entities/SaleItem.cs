@@ -30,9 +30,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
             TotalSaleItemAmount = totalSaleItemAmount;
             Discount = discount;
             TotalPriceDiscount = totalPriceDiscount;
-            CreatedAt = createdAt;
-            UpdatedAt = updatedAt;
-            Status = status;
             ProductId = productId;
             SaleId = saleId;
         }

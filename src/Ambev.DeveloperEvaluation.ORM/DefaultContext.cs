@@ -424,7 +424,6 @@ public class DefaultContext : DbContext
             {
                 Id = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
                 SaleNumber = 1,
-                TotalSaleAmount = 33.90,
                 CustomerId = Guid.Parse("271cd039-421d-4527-b5a6-8628ceb22476"),
                 SalesBrancheId = Guid.Parse("82d01876-9ce5-43f2-b872-f2f838652a82"),
                 CreatedAt = DateTime.UtcNow,
@@ -434,7 +433,6 @@ public class DefaultContext : DbContext
             {
                 Id = Guid.Parse("e33ff51d-cc6a-4f1e-92db-008c43b1b1e5"),
                 SaleNumber = 2,
-                TotalSaleAmount = 26.90,
                 CustomerId = Guid.Parse("c180df72-7893-4c43-9aac-cc3e285f56db"),
                 SalesBrancheId = Guid.Parse("0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"),
                 CreatedAt = DateTime.UtcNow,
@@ -444,7 +442,6 @@ public class DefaultContext : DbContext
             {
                 Id = Guid.Parse("a8b93163-6e0f-431f-baac-2c5a0c69bca5"),
                 SaleNumber = 3,
-                TotalSaleAmount = 26.90,
                 CustomerId = Guid.Parse("e636ec5b-47bd-4368-8277-3625162b2f00"),
                 SalesBrancheId = Guid.Parse("3033ae94-060e-4343-ae4b-10912207a58e"),
                 CreatedAt = DateTime.UtcNow,

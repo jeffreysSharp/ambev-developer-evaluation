@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Entities;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 using Ambev.DeveloperEvaluation.Domain.Repositories;
 using AutoMapper;
 using FluentValidation;
@@ -35,6 +36,10 @@ public class CreateSaleHandler : IRequestHandler<CreateSaleCommand, CreateSaleRe
         var existingSaleNumber = await _saleRepository.GetBySaleNumberAsync(command.SaleNumber, cancellationToken);
         if (existingSaleNumber != null)
             throw new InvalidOperationException($"Sale with Sale Number {command.SaleNumber} already exists");
+
+        command.CreatedAt = DateTime.UtcNow;
+        command.UpdatedAt = DateTime.UtcNow;
+        command.Status = Status.Active;
 
         var sale = _mapper.Map<Sale>(command);
 
