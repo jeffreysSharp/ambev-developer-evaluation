@@ -11,6 +11,7 @@
 5. Ao abrir o Swagger, no Item Sales execute o POST:
 - Adicionar nova venda
 - Request Body:
+
   ```json
 {
   "saleNumber": 4,
@@ -28,7 +29,7 @@
     }
   ]
 }
-  ```   
+  ```  
 
 ### Regras de negócios
 
