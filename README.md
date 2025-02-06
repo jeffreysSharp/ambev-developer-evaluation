@@ -10,8 +10,8 @@
    Users, Customers, Products, SalesBranchs, Sales, SalesItems
 5. Ao abrir o Swagger, no Item Sales execute o POST:
 
-#### POST /carts
-- Description: Add a new cart
+#### POST /Sale
+- Description: Add a new Sale
 - Request Body:
   ```json
   {
@@ -29,20 +29,6 @@
 	 "saleId": "debd81f5-7b98-4c63-a482-8f0123bfa093"
    }
   ]
-  }
-  ```
-- Response: 
-  ```json
-  {
-    "id": "integer",
-    "userId": "integer",
-    "date": "string (date)",
-    "products": [
-      {
-        "productId": "integer",
-        "quantity": "integer"
-      }
-    ]
   }
   ```
 
