@@ -1,6 +1,9 @@
 # Projeto de avaliação de desenvolvedor .NET
 
-`LEIA COM ATENÇÃO`
+`Jeferson Almeida`
+`https://www.linkedin.com/in/jefersonalmeidadotnetdeveloper`
+`11 997541210`
+
 
 ## Instruções para executar a aplicação
 1. Altere a string de conexão no arquivo appsettings.json no projeto Ambev.DeveloperEvaluation.SalesApi
