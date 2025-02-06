@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Entities;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 using Ambev.DeveloperEvaluation.Domain.Repositories;
 using AutoMapper;
 using FluentValidation;
@@ -28,9 +29,13 @@ public class CreateSaleItemHandler : IRequestHandler<CreateSaleItemCommand, Crea
         // TODO Create Validations
 
         var saleItem = _mapper.Map<SaleItem>(command);
-        
+        saleItem.CreatedAt = DateTime.UtcNow;
+        saleItem.UpdatedAt = DateTime.UtcNow;
+        saleItem.Status = Status.Active;
+
         var createdSaleItem = await _saleItemRepository.CreateAsync(saleItem, cancellationToken);
         var result = _mapper.Map<CreateSaleItemResult>(createdSaleItem);
+        
         return result;
     }
 }

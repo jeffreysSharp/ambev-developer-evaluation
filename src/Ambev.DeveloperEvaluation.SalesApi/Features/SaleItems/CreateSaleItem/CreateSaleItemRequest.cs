@@ -1,4 +1,5 @@
 ﻿using Ambev.DeveloperEvaluation.Domain.Enums;
+using System.Text.Json.Serialization;
 
 namespace Ambev.DeveloperEvaluation.SalesApi.Features.SaleItems.CreateSaleItem;
 
@@ -10,9 +11,6 @@ public class CreateSaleItemRequest
     public double TotalSaleItemAmount { get; set; }
     public double Discount { get; set; }
     public double TotalPriceDiscount { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime? UpdatedAt { get; set; }
-    public Status Status { get; set; }
     public Guid ProductId { get; set; }
     public Guid SaleId { get; set; }
 }
