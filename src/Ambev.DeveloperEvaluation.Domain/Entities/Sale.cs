@@ -24,9 +24,9 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         {
             SaleNumber = saleNumber;
             TotalSaleAmount = totalSaleAmount;
-            CreatedAt = createdAt;
-            UpdatedAt = updatedAt;
-            Status = status;
+            CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
+            Status = Status.Active;
             CustomerId = customerId;
             SalesBrancheId = salesBrancheId;
             SaleItems = saleItems;

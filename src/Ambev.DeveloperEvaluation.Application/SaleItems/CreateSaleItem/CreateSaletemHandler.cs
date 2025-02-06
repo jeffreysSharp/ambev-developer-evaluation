@@ -31,6 +31,7 @@ public class CreateSaleItemHandler : IRequestHandler<CreateSaleItemCommand, Crea
         
         var createdSaleItem = await _saleItemRepository.CreateAsync(saleItem, cancellationToken);
         var result = _mapper.Map<CreateSaleItemResult>(createdSaleItem);
+        
         return result;
     }
 }

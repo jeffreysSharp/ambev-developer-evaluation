@@ -1,9 +1,6 @@
 {
-  "saleNumber": 4,
+  "saleNumber": 7,
   "totalSaleAmount": 90,
-  "createdAt": "2025-02-05T17:33:39.562Z",
-  "updatedAt": "2025-02-05T17:33:39.562Z",
-  "status": 1,
   "customerId": "c180df72-7893-4c43-9aac-cc3e285f56db",
   "salesBrancheId": "82d01876-9ce5-43f2-b872-f2f838652a82",
   "saleItems": [
@@ -13,9 +10,6 @@
       "totalSaleItemAmount": 100,
       "discount": 10,
       "totalPriceDiscount": 90,
-      "createdAt": "2025-02-05T17:33:39.562Z",
-      "updatedAt": "2025-02-05T17:33:39.562Z",
-      "status": 1,
       "productId": "7fa0352c-fc7f-4f75-b7a4-a294aabb829b",
       "saleId": "debd81f5-7b98-4c63-a482-8f0123bfa093"
     }

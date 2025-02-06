@@ -1,4 +1,5 @@
-﻿using Ambev.DeveloperEvaluation.SalesApi.Common;
+﻿using Ambev.DeveloperEvaluation.Domain.Entities;
+using Ambev.DeveloperEvaluation.SalesApi.Common;
 using Ambev.DeveloperEvaluation.SalesApi.Features.Sale.CreateSale;
 using Ambev.DeveloperEvaluation.SalesApi.Features.SaleItems.CreateSaleItem;
 using Ambev.SalesApi.Application.SaleItems.CreateSaleItem;
@@ -6,6 +7,7 @@ using Ambev.SalesApi.Application.Sales.CreateSale;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace Ambev.DeveloperEvaluation.SalesApi.Features.Sales;
 
@@ -38,22 +40,8 @@ public class SalesController : BaseController
 
         if (response != null)
         {
-            foreach (var saleItem in request.SaleItems)
-            {   var saleItemRequest = new CreateSaleItemRequest();
-                saleItemRequest.SaleId = response.Id;
-                saleItemRequest.ProductId = saleItem.ProductId;
-                saleItemRequest.Quantity = saleItem.Quantity;
-                saleItemRequest.Price = saleItem.Price;
-                saleItemRequest.TotalSaleItemAmount = saleItem.TotalSaleItemAmount;
-                saleItemRequest.Discount = saleItem.Discount;
-                saleItemRequest.TotalPriceDiscount = saleItem.TotalPriceDiscount;
-                saleItemRequest.UpdatedAt = saleItem.UpdatedAt;
-                saleItemRequest.Status = saleItem.Status;                
-
-                var commandSaleImtems = _mapper.Map<CreateSaleItemCommand>(saleItemRequest);
-                var responseSaleItems = await _mediator.Send(commandSaleImtems, cancellationToken);
-            }          
-         }
+            PopularSaleItems(response, request.SaleItems, cancellationToken);
+        }
 
         return Created(string.Empty, new ApiResponseWithData<CreateSaleResponse>
         {
@@ -62,4 +50,24 @@ public class SalesController : BaseController
             Data = _mapper.Map<CreateSaleResponse>(response)
         });
     }
+
+    private async void PopularSaleItems(CreateSaleResult response, List<SaleItem> saleItems, CancellationToken cancellationToken)
+    {
+        foreach (var saleItem in saleItems)
+        {
+            var saleItemRequest = new CreateSaleItemRequest();
+            saleItemRequest.SaleId = response.Id;
+            saleItemRequest.ProductId = saleItem.ProductId;
+            saleItemRequest.Quantity = saleItem.Quantity;
+            saleItemRequest.Price = saleItem.Price;
+            saleItemRequest.TotalSaleItemAmount = saleItem.TotalSaleItemAmount;
+            saleItemRequest.Discount = saleItem.Discount;
+            saleItemRequest.TotalPriceDiscount = saleItem.TotalPriceDiscount;
+
+            var commandSaleImtems = _mapper.Map<CreateSaleItemCommand>(saleItemRequest);
+            var responseSaleItems = await _mediator.Send(commandSaleImtems, cancellationToken);
+        }
+    }
+
 }
+
