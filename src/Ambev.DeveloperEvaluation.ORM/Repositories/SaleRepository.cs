@@ -20,8 +20,14 @@ public class SaleRepository : ISaleRepository
         return sale;
     }
 
+    public async Task<Sale?> GetBySaleIdAsync(Guid id, CancellationToken cancellationToken = default)
+    {
+        return await _context.Sales.FirstOrDefaultAsync(o => o.Id == id, cancellationToken);
+    }
+
     public async Task<Sale?> GetBySaleNumberAsync(int saleNumber, CancellationToken cancellationToken = default)
     {
         return await _context.Sales.FirstOrDefaultAsync(o => o.SaleNumber == saleNumber, cancellationToken);
     }
+
 }

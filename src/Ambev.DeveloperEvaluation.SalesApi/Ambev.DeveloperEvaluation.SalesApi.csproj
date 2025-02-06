@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Customers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Ambev.DeveloperEvaluation.IoC\Ambev.DeveloperEvaluation.IoC.csproj" />
   </ItemGroup>
 
