@@ -19,12 +19,6 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public Guid SaleId { get; set; }
         public Guid ProductId { get; set; }
         
-        // EF Rel.
-        [JsonIgnore]
-        public Sale? Sale { get; set; }
-        [JsonIgnore]
-        public Product? Product { get; set; }
-
         public SaleItem() { }
 
         public SaleItem(int quantity, double price, double totalSaleItemAmount, double discount, 
