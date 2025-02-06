@@ -9,27 +9,42 @@
 4. Execute o comando Update-Database > Este comando vai criar e popular as tabelas: 
    Users, Customers, Products, SalesBranchs, Sales, SalesItems
 5. Ao abrir o Swagger, no Item Sales execute o POST:
-- Adicionar nova venda
-- Request Body:
 
+#### POST /carts
+- Description: Add a new cart
+- Request Body:
   ```json
-{
+  {
   "saleNumber": 4,
   "customerId": "c180df72-7893-4c43-9aac-cc3e285f56db",
   "salesBrancheId": "82d01876-9ce5-43f2-b872-f2f838652a82",
   "saleItems": [
-    {
-      "quantity": 21,
-      "price": 3.25,
-      "totalSaleItemAmount": 0,
-      "discount": 0,
-      "totalPriceDiscount": 0,
-      "productId": "7fa0352c-fc7f-4f75-b7a4-a294aabb829b",
-      "saleId": "debd81f5-7b98-4c63-a482-8f0123bfa093"
-    }
+   {
+	 "quantity": 6,
+	 "price": 3.25,
+	 "totalSaleItemAmount": 0,
+	 "discount": 0,
+	 "totalPriceDiscount": 0,
+	 "productId": "7fa0352c-fc7f-4f75-b7a4-a294aabb829b",
+	 "saleId": "debd81f5-7b98-4c63-a482-8f0123bfa093"
+   }
   ]
-}
-  ```  
+  }
+  ```
+- Response: 
+  ```json
+  {
+    "id": "integer",
+    "userId": "integer",
+    "date": "string (date)",
+    "products": [
+      {
+        "productId": "integer",
+        "quantity": "integer"
+      }
+    ]
+  }
+  ```
 
 ### Regras de negócios
 
