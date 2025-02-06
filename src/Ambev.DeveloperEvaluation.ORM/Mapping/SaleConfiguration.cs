@@ -14,13 +14,7 @@ public class SaleConfiguration : IEntityTypeConfiguration<Sale>
         builder.Property(u => u.Id).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
         builder.Property(u => u.SaleNumber).IsRequired();
         builder.Property(u => u.TotalSaleAmount).IsRequired();
-
         builder.Property(u => u.CustomerId).IsRequired();
         builder.Property(u => u.SalesBrancheId).IsRequired();
-
-        // 1 : N => Sale : SaleItems
-        builder.HasMany(c => c.SaleItems)
-                .WithOne(c => c.Sale)
-                .HasForeignKey(c => c.SaleId);
     }
 }
