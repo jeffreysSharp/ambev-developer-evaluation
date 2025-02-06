@@ -60,9 +60,9 @@ public class SalesController : BaseController
             saleItemRequest.ProductId = saleItem.ProductId;
             saleItemRequest.Quantity = saleItem.Quantity;
             saleItemRequest.Price = saleItem.Price;
-            saleItemRequest.TotalSaleItemAmount = saleItem.TotalSaleItemAmount;
+            saleItemRequest.TotalSaleItemAmount = saleItem.Price * saleItem.Quantity;
             saleItemRequest.Discount = saleItem.Discount;
-            saleItemRequest.TotalPriceDiscount = saleItem.TotalPriceDiscount;
+            saleItemRequest.TotalPriceDiscount = saleItemRequest.TotalSaleItemAmount - ((saleItemRequest.TotalSaleItemAmount / 100) * saleItem.Discount);
 
             var commandSaleImtems = _mapper.Map<CreateSaleItemCommand>(saleItemRequest);
             var responseSaleItems = await _mediator.Send(commandSaleImtems, cancellationToken);
