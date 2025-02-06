@@ -1,11 +1,11 @@
 {
-  "saleNumber": 13,
+  "saleNumber": 14,
   "customerId": "c180df72-7893-4c43-9aac-cc3e285f56db",
   "salesBrancheId": "82d01876-9ce5-43f2-b872-f2f838652a82",
   "saleItems": [
     {
       "quantity": 20,
-      "price": 3.29,
+      "price": 6.39,
       "totalSaleItemAmount": 0,
       "discount": 0,
       "totalPriceDiscount": 0,

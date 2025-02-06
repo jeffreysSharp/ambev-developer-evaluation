@@ -54,13 +54,14 @@ public class SalesController : BaseController
     private async void PopularSaleItems(CreateSaleResult response, List<SaleItem> saleItems, CancellationToken cancellationToken)
     {
         
-
         foreach (var saleItem in saleItems)
         {
             var discount = 0;
 
-            if (saleItem.Quantity > 4)
+            if (saleItem.Quantity > 4 && saleItem.Quantity <= 9)
                 discount = 10;
+            else if (saleItem.Quantity > 4 && saleItem.Quantity >= 9 && saleItem.Quantity <= 20 )
+                discount = 20;
             
             var saleItemRequest = new CreateSaleItemRequest();
             saleItemRequest.SaleId = response.Id;
