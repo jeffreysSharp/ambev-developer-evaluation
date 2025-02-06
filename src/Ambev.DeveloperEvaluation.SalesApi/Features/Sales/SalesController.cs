@@ -7,7 +7,6 @@ using Ambev.SalesApi.Application.Sales.CreateSale;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
 
 namespace Ambev.DeveloperEvaluation.SalesApi.Features.Sales;
 
@@ -60,9 +59,20 @@ public class SalesController : BaseController
 
             if (saleItem.Quantity > 4 && saleItem.Quantity <= 9)
                 discount = 10;
-            else if (saleItem.Quantity > 4 && saleItem.Quantity >= 9 && saleItem.Quantity <= 20 )
+            else if (saleItem.Quantity > 4 && saleItem.Quantity >= 9 && saleItem.Quantity <= 20)
                 discount = 20;
-            
+            else if (saleItem.Quantity > 20)
+            {
+
+                BadRequest(string.Empty, new ApiResponse
+                {
+                    Success = false,
+                    Message = "It is not possible to purchase more than 20 products"
+                });
+
+                return;
+            }
+
             var saleItemRequest = new CreateSaleItemRequest();
             saleItemRequest.SaleId = response.Id;
             saleItemRequest.ProductId = saleItem.ProductId;
@@ -76,6 +86,5 @@ public class SalesController : BaseController
             var responseSaleItems = await _mediator.Send(commandSaleImtems, cancellationToken);
         }
     }
-
 }
 

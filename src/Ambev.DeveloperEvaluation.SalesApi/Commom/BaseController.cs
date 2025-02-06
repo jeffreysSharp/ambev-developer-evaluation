@@ -12,7 +12,7 @@ public class BaseController : ControllerBase
     protected IActionResult Created<T>(string routeName, object routeValues, T data) =>
         base.CreatedAtRoute(routeName, routeValues, new ApiResponseWithData<T> { Data = data, Success = true });
 
-    protected IActionResult BadRequest(string message) =>
+    protected IActionResult BadRequest(string message, ApiResponse apiResponse) =>
         base.BadRequest(new ApiResponse { Message = message, Success = false });
 
     protected IActionResult NotFound(string message = "Resource not found") =>
