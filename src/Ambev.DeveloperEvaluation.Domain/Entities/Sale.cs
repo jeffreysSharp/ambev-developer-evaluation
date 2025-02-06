@@ -14,17 +14,24 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public Status Status { get; set; }
         public Guid CustomerId { get; set; }
         public Guid SalesBrancheId { get; set; }
+        public List<SaleItem> SaleItems { get; set; } = new List<SaleItem>();
 
-        private readonly List<SaleItem> _saleItems;
-        public IReadOnlyCollection<SaleItem> SaleItems => _saleItems;
-        
         // EF Rel.
         public Customer Customer { get; set; }
         public SalesBranch SalesBranche { get; set; }
         public Sale() { }
-        public Sale(DateTime createdAt)
+        public Sale(int saleNumber, double totalSaleAmount, DateTime createdAt, DateTime? updatedAt, Status status, Guid customerId, Guid salesBrancheId, List<SaleItem> saleItems, Customer customer, SalesBranch salesBranche)
         {
-            CreatedAt = DateTime.UtcNow;
+            SaleNumber = saleNumber;
+            TotalSaleAmount = totalSaleAmount;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+            Status = status;
+            CustomerId = customerId;
+            SalesBrancheId = salesBrancheId;
+            SaleItems = saleItems;
+            Customer = customer;
+            SalesBranche = salesBranche;
         }
 
         public ValidationResultDetail Validate()

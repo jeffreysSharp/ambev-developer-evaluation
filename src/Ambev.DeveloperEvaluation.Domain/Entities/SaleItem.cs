@@ -2,6 +2,7 @@
 using Ambev.DeveloperEvaluation.Domain.Common;
 using Ambev.DeveloperEvaluation.Domain.Enums;
 using Ambev.DeveloperEvaluation.Domain.Validation;
+using System.Text.Json.Serialization;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
@@ -15,17 +16,31 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public Status Status { get; set; }
-        public Guid ProductId { get; set; }
         public Guid SaleId { get; set; }
-
+        public Guid ProductId { get; set; }
+        
         // EF Rel.
-        public Sale Sale { get; set; }
-        public Product Product { get; set; }
+        [JsonIgnore]
+        public Sale? Sale { get; set; }
+        [JsonIgnore]
+        public Product? Product { get; set; }
 
         public SaleItem() { }
-        public SaleItem(DateTime createdAt)
+
+        public SaleItem(int quantity, double price, double totalSaleItemAmount, double discount, 
+            double totalPriceDiscount, DateTime createdAt, DateTime? updatedAt, Status status, 
+            Guid productId, Guid saleId)
         {
-            CreatedAt = DateTime.UtcNow;
+            Quantity = quantity;
+            Price = price;
+            TotalSaleItemAmount = totalSaleItemAmount;
+            Discount = discount;
+            TotalPriceDiscount = totalPriceDiscount;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
+            Status = status;
+            ProductId = productId;
+            SaleId = saleId;
         }
 
         public ValidationResultDetail Validate()

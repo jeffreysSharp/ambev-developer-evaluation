@@ -1,22 +1,21 @@
 ﻿using Ambev.DeveloperEvaluation.Common.Validation;
+using Ambev.DeveloperEvaluation.Domain.Enums;
 using MediatR;
 
 namespace Ambev.SalesApi.Application.SaleItems.CreateSaleItem;
 
 public class CreateSaleItemCommand : IRequest<CreateSaleItemResult>
 {
-    public Guid SaleId { get; private set; }
-    public Guid ProductId { get; private set; }
-    public int Quantity { get; private set; }
-    public decimal Price { get; private set; }
-    public decimal TotalSaleItemAmount { get; set; }
-    public decimal Dicount { get; set; }
-    public decimal TotalPriceDiscount { get; set; }
-
-    // EF Rel.
-    //public Sale Sale { get; set; }
-    //public Product Product { get; set; }
-
+    public int Quantity { get; set; }
+    public double Price { get; set; }
+    public double TotalSaleItemAmount { get; set; }
+    public double Discount { get; set; }
+    public double TotalPriceDiscount { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
+    public Status Status { get; set; }
+    public Guid ProductId { get; set; }
+    public Guid SaleId { get; set; }
 
     public ValidationResultDetail Validate()
     {

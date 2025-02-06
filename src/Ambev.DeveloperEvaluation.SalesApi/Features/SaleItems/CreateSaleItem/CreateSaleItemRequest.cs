@@ -11,7 +11,8 @@ public class CreateSaleItemRequest
     public double Discount { get; set; }
     public double TotalPriceDiscount { get; set; }
     public DateTime CreatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
     public Status Status { get; set; }
-    public Guid SaleId { get; set; }
     public Guid ProductId { get; set; }
+    public Guid SaleId { get; set; }
 }
