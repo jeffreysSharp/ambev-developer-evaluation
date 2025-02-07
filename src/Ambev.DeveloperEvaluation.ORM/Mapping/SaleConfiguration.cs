@@ -12,7 +12,7 @@ public class SaleConfiguration : IEntityTypeConfiguration<Sale>
 
         builder.HasKey(u => u.Id);
         builder.Property(u => u.Id).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
-        builder.Property(u => u.SaleNumber).IsRequired();
+        builder.Property(u => u.SaleNumber).HasColumnType("uuid").HasDefaultValueSql("gen_random_uuid()");
         builder.Property(u => u.CustomerId).IsRequired();
         builder.Property(u => u.SalesBrancheId).IsRequired();
     }

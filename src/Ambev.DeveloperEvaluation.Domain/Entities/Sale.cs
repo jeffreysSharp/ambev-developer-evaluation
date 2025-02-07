@@ -2,12 +2,13 @@
 using Ambev.DeveloperEvaluation.Domain.Common;
 using Ambev.DeveloperEvaluation.Domain.Enums;
 using Ambev.DeveloperEvaluation.Domain.Validation;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
     public class Sale : BaseEntity
     {
-        public int SaleNumber { get; set; }
+        public Guid SaleNumber { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public Status Status { get; set; }
@@ -19,7 +20,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public Customer Customer { get; set; }
         public SalesBranch SalesBranche { get; set; }
         public Sale() { }
-        public Sale(int saleNumber, double totalSaleAmount, DateTime createdAt, DateTime? updatedAt, Status status, Guid customerId, Guid salesBrancheId, List<SaleItem> saleItems, Customer customer, SalesBranch salesBranche)
+        public Sale(Guid saleNumber, double totalSaleAmount, DateTime createdAt, DateTime? updatedAt, Status status, Guid customerId, Guid salesBrancheId, List<SaleItem> saleItems, Customer customer, SalesBranch salesBranche)
         {
             SaleNumber = saleNumber;
             CreatedAt = DateTime.UtcNow;

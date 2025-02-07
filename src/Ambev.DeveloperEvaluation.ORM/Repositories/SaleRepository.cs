@@ -22,12 +22,12 @@ public class SaleRepository : ISaleRepository
 
     public async Task<Sale?> GetBySaleIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
-        return await _context.Sales.FirstOrDefaultAsync(o => o.Id == id, cancellationToken);
+        return await _context.Sales.FirstOrDefaultAsync(i => i.Id == id, cancellationToken);
     }
 
-    public async Task<Sale?> GetBySaleNumberAsync(int saleNumber, CancellationToken cancellationToken = default)
+    public async Task<Sale?> GetBySaleNumberAsync(Guid saleNumber, CancellationToken cancellationToken = default)
     {
-        return await _context.Sales.FirstOrDefaultAsync(o => o.SaleNumber == saleNumber, cancellationToken);
+        return await _context.Sales.FirstOrDefaultAsync(sn => sn.SaleNumber == saleNumber, cancellationToken);
     }
 
 }

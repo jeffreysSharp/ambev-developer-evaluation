@@ -1,11 +1,7 @@
-﻿using Ambev.DeveloperEvaluation.Domain.Enums;
-using System.Text.Json.Serialization;
-
-namespace Ambev.DeveloperEvaluation.SalesApi.Features.SaleItems.CreateSaleItem;
+﻿namespace Ambev.DeveloperEvaluation.SalesApi.Features.SaleItems.CreateSaleItem;
 
 public class CreateSaleItemRequest
 {
-    public Guid Id { get; set; }
     public int Quantity { get; set; }
     public double Price { get; set; }
     public double TotalSaleItemAmount { get; set; }

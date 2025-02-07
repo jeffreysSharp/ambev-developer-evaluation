@@ -41,7 +41,9 @@ public class DefaultContext : DbContext
                 Password = "Teste@123",
                 Role = UserRole.Admin,
                 Status = Status.Active,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+                
             },
             new User
             {
@@ -52,7 +54,8 @@ public class DefaultContext : DbContext
                 Password = "ypgeD344.s",
                 Role = UserRole.Admin,
                 Status = Status.Active,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
             },
             new User
             {
@@ -63,7 +66,8 @@ public class DefaultContext : DbContext
                 Password = "guetH908~",
                 Role = UserRole.Manager,
                 Status = Status.Active,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
             },
             new User
             {
@@ -74,7 +78,8 @@ public class DefaultContext : DbContext
                 Password = "vxpeC202\"+",
                 Role = UserRole.Customer,
                 Status = Status.Active,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
             }
         );
         #endregion
@@ -90,7 +95,8 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
-                Status = Status.Active
+                Status = Status.Active,
+                UpdatedAt = DateTime.UtcNow
             },
             new Product
             {
@@ -101,6 +107,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -112,6 +119,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -123,6 +131,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -134,6 +143,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -145,6 +155,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -156,6 +167,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -167,6 +179,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -178,6 +191,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -189,6 +203,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -200,6 +215,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -211,6 +227,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -222,6 +239,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Product
@@ -233,6 +251,7 @@ public class DefaultContext : DbContext
                 Image = "image.jpg",
                 Stock = 100,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             }
         );
@@ -248,6 +267,7 @@ public class DefaultContext : DbContext
                 Phone = "1251145281",
                 SocialNumber = "117-25-1588",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -258,6 +278,7 @@ public class DefaultContext : DbContext
                 Phone = "2784864410",
                 SocialNumber = "807-31-1052",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -268,6 +289,7 @@ public class DefaultContext : DbContext
                 Phone = "5673473269",
                 SocialNumber = "687-16-2264",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -278,6 +300,7 @@ public class DefaultContext : DbContext
                 Phone = "4453959379",
                 SocialNumber = "512-17-6944",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -288,6 +311,7 @@ public class DefaultContext : DbContext
                 Phone = "4707864856",
                 SocialNumber = "457-86-4530",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -298,6 +322,7 @@ public class DefaultContext : DbContext
                 Phone = "9814345966",
                 SocialNumber = "552-29-4372",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -308,6 +333,7 @@ public class DefaultContext : DbContext
                 Phone = "7247173033",
                 SocialNumber = "523-53-3047",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -318,6 +344,7 @@ public class DefaultContext : DbContext
                 Phone = "6461435318",
                 SocialNumber = "884-29-8560",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Customer
@@ -328,6 +355,7 @@ public class DefaultContext : DbContext
                 Phone = "3958797276",
                 SocialNumber = "314-65-1589",
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             }
         );
@@ -341,6 +369,7 @@ public class DefaultContext : DbContext
                Name = "Camaçari",
                State = "BA",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -349,6 +378,7 @@ public class DefaultContext : DbContext
                Name = "Caruaru",
                State = "PE",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -357,6 +387,7 @@ public class DefaultContext : DbContext
                Name = "Contagem",
                State = "MG",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -365,6 +396,7 @@ public class DefaultContext : DbContext
                Name = "Curitiba",
                State = "PR",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -373,6 +405,7 @@ public class DefaultContext : DbContext
                Name = "Guarulhos",
                State = "SP",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -381,6 +414,7 @@ public class DefaultContext : DbContext
                Name = "Itajáí",
                State = "SC",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -389,6 +423,7 @@ public class DefaultContext : DbContext
                Name = "Itapissuma",
                State = "PE",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -397,6 +432,7 @@ public class DefaultContext : DbContext
                Name = "Jacareí",
                State = "SP",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -405,6 +441,7 @@ public class DefaultContext : DbContext
                Name = "Jaguariúna",
                State = "SP",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            },
            new SalesBranch
@@ -413,6 +450,7 @@ public class DefaultContext : DbContext
                Name = "Jundiaí",
                State = "SP",
                CreatedAt = DateTime.UtcNow,
+               UpdatedAt = DateTime.UtcNow,
                Status = Status.Active
            }
          );
@@ -423,28 +461,31 @@ public class DefaultContext : DbContext
             new Sale
             {
                 Id = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
-                SaleNumber = 1,
+                // SaleNumber = 1,
                 CustomerId = Guid.Parse("271cd039-421d-4527-b5a6-8628ceb22476"),
                 SalesBrancheId = Guid.Parse("82d01876-9ce5-43f2-b872-f2f838652a82"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Sale
             {
                 Id = Guid.Parse("e33ff51d-cc6a-4f1e-92db-008c43b1b1e5"),
-                SaleNumber = 2,
+                // SaleNumber = 2,
                 CustomerId = Guid.Parse("c180df72-7893-4c43-9aac-cc3e285f56db"),
                 SalesBrancheId = Guid.Parse("0cacb00b-a4d2-4a14-a7e1-9e73e9c70fc6"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new Sale
             {
                 Id = Guid.Parse("a8b93163-6e0f-431f-baac-2c5a0c69bca5"),
-                SaleNumber = 3,
+                // SaleNumber = 3,
                 CustomerId = Guid.Parse("e636ec5b-47bd-4368-8277-3625162b2f00"),
                 SalesBrancheId = Guid.Parse("3033ae94-060e-4343-ae4b-10912207a58e"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             });
         #endregion
@@ -462,6 +503,7 @@ public class DefaultContext : DbContext
                 SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
                 ProductId = Guid.Parse("230168d5-4fc4-499b-b67e-f8b04c901d85"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new SaleItem
@@ -475,6 +517,7 @@ public class DefaultContext : DbContext
                 SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
                 ProductId = Guid.Parse("4ac72fff-c897-4126-ab19-dd2756451d96"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             },
             new SaleItem
@@ -488,6 +531,7 @@ public class DefaultContext : DbContext
                 SaleId = Guid.Parse("d38c0ac9-1dc4-4432-bfda-42fcaaa70b2d"),
                 ProductId = Guid.Parse("4c653cff-229f-48f7-abf5-c1cf66823093"),
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
                 Status = Status.Active
             }
         );
